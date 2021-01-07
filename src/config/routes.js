@@ -4,6 +4,7 @@ import Layout from '../components/Layout_Home/Layout'
 
 //Paginas
 import Home from '../pages/Home/Home';
+import Galeria from '../pages/Galeria/galeria'
 
 
 const routes = [
@@ -15,6 +16,11 @@ const routes = [
 			{
 				path: '/',
 				component: Home,
+				exact: true
+			},
+			{
+				path: '/galeria',
+				component: Galeria,
 				exact: true
             }
         ]

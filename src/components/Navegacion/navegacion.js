@@ -1,18 +1,27 @@
-import React from 'react';//, { useState }
-// import { Link } from 'react-router-dom';
-import { AppBar, Toolbar} from '@material-ui/core';
-import { fade, makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import BrightnessMediumIcon from '@material-ui/icons/BrightnessMedium';
-import Brightness5Icon from '@material-ui/icons/Brightness5';
-import { deepOrange } from '@material-ui/core/colors';
-
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+//MATERIAL UI
+import { AppBar, Box, Button, Drawer, Hidden, IconButton,List, Toolbar} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import MenuIcon from '@material-ui/icons/Menu';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
+//ICONOS
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import BrightnessMediumIcon from '@material-ui/icons/BrightnessMedium';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import Brightness5Icon from '@material-ui/icons/Brightness5';
+import ErrorIcon from '@material-ui/icons/Error';
+import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import HomeIcon from '@material-ui/icons/Home';
 
-const drawerWidth = 240;
+
+import { deepOrange } from '@material-ui/core/colors';
+
+//otros
+import imagen from '../../image/Huawei.png'
 
 const useStyles = makeStyles((theme) => ({
 	grow: {
@@ -21,6 +30,21 @@ const useStyles = makeStyles((theme) => ({
 	appbar: {
 		backgroundColor: theme.palette.navbar
 	},
+	title: {
+		display: 'none',
+		[theme.breakpoints.up('sm')]: {
+			display: 'block'
+		}
+	},
+	offset: theme.mixins.toolbar,
+	orange: {
+		color: theme.palette.getContrastText(deepOrange[500]),
+		backgroundColor: deepOrange[500]
+	},
+	imagen:{
+		width: 110,
+		height: 55
+	},
 	marginButton: {
 		marginRight: theme.spacing(1),
 		marginLeft: theme.spacing(1)
@@ -28,73 +52,12 @@ const useStyles = makeStyles((theme) => ({
 	menuButton: {
 		marginRight: theme.spacing(2)
 	},
-	title: {
-		display: 'none',
-		[theme.breakpoints.up('sm')]: {
-			display: 'block'
-		}
-	},
-	search: {
-		position: 'relative',
-		borderRadius: theme.shape.borderRadius,
-		backgroundColor: fade(theme.palette.common.white, 0.15),
-		'&:hover': {
-			backgroundColor: fade(theme.palette.common.white, 0.25)
-		},
-		marginRight: theme.spacing(2),
-		marginLeft: 0,
-		width: '100%',
-		[theme.breakpoints.up('sm')]: {
-			marginLeft: theme.spacing(3),
-			width: 'auto'
-		}
-	},
-	searchIcon: {
-		padding: theme.spacing(0, 2),
-		height: '100%',
-		position: 'absolute',
-		pointerEvents: 'none',
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'center'
-	},
-	inputRoot: {
-		color: 'inherit'
-	},
-	inputInput: {
-		padding: theme.spacing(1, 1, 1, 0),
-		// vertical padding + font size from searchIcon
-		paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-		transition: theme.transitions.create('width'),
-		width: '100%',
-		[theme.breakpoints.up('md')]: {
-			width: '20ch'
-		}
-	},
-	drawer: {
-		width: drawerWidth,
-		flexShrink: 0
-	},
-	drawerPaper: {
-		width: drawerWidth
-	},
-	drawerHeader: {
-		display: 'flex',
-		alignItems: 'center',
-		padding: theme.spacing(0, 1),
-		// necessary for content to be below app bar
-		...theme.mixins.toolbar,
-		justifyContent: 'flex-end'
-	},
-	offset: theme.mixins.toolbar,
-	orange: {
-		color: theme.palette.getContrastText(deepOrange[500]),
-		backgroundColor: deepOrange[500]
-	}
 }));
 
 export default function Navegacion(props) {
 	const [ darkTheme, setDarkTheme ] = props.tema;
+	const [ open, setOpen ] = useState(false);
+
 	const classes = useStyles();
 
 	const darkModeAction = () => {
@@ -102,29 +65,113 @@ export default function Navegacion(props) {
 		localStorage.setItem('tema', !darkTheme);
 	};
 
+	const handleDrawerOpen = () => {
+		setOpen(true);
+	};
+
+	const handleDrawerClose = () => {
+		setOpen(false);
+	};
+
 	const renderMenu = (
 		<div>
 			<ListItem button onClick={darkModeAction}>
 				<ListItemIcon>{darkTheme ? <Brightness5Icon /> : <BrightnessMediumIcon />}</ListItemIcon>
-				<ListItemText primary={`tema: ${darkTheme === true ? 'Oscuro' : 'Por defecto'}`} />
 			</ListItem>
 		</div>
 	);
 
 	return (
 		<div className={classes.root}>
-			<div className={classes.grow}>
 				<AppBar position="fixed" className={classes.appbar}>
 					<Toolbar>
-						<Typography className={classes.title} variant="h6" noWrap>
-							CAFI
-						</Typography>
-						{renderMenu}
-						<div className={classes.grow} />
+						<Hidden mdUp>
+							<IconButton
+								edge="start"
+								aria-label="show more"
+								aria-haspopup="true"
+								onClick={handleDrawerOpen}
+								className={classes.menuButton}
+							>
+								<MenuIcon />
+							</IconButton>
+						</Hidden>
+						<Hidden smDown>
+							<Box>
+								<img className={classes.imagen} alt="no hay imagen" src={imagen} />
+							</Box>
+						</Hidden>
+						<Hidden smDown>
+							<div className={classes.grow}/>
+							<Button
+								component={Link}
+								to="/galeria"
+								className={classes.marginButton}
+							>
+								Galeria
+							</Button>
+							<Button
+								component={Link}
+								to="/"
+								className={classes.marginButton}
+							>
+								Informacion
+							</Button>
+							<Button
+								component={Link}
+								to="/"
+								className={classes.marginButton}
+							>
+								Paquetes
+							</Button>
+							{renderMenu}
+						</Hidden>
 					</Toolbar>
 				</AppBar>
-			</div>
-			<div className={classes.offset} />
+				<Drawer  
+					className={classes.drawer}
+					anchor="left"
+					open={open}
+					onClose={handleDrawerClose}
+					classes={{
+						paper: classes.drawerPaper
+					}}
+				>
+					<div className={classes.drawerHeader}>
+						<IconButton onClick={handleDrawerClose}>
+							<ChevronLeftIcon />
+						</IconButton>
+					</div>
+					<List>
+						<ListItem button component={Link} to="/" onClick={handleDrawerClose}>
+							<ListItemIcon>
+								<HomeIcon />
+							</ListItemIcon>
+							<ListItemText primary="Inicio" />
+						</ListItem>
+						<ListItem button component={Link} to="/galeria" onClick={handleDrawerClose}>
+							<ListItemIcon>
+								<PhotoLibraryIcon />
+							</ListItemIcon>
+							<ListItemText primary="Galeria" />
+						</ListItem>
+						<ListItem button component={Link} to="/" onClick={handleDrawerClose}>
+							<ListItemIcon>
+								<ErrorIcon/>
+							</ListItemIcon>
+							<ListItemText primary="Informacion" />
+						</ListItem>
+						<ListItem button component={Link} to="/" onClick={handleDrawerClose}>
+							<ListItemIcon>
+								<LocalOfferIcon/>
+							</ListItemIcon>
+							<ListItemText primary="Paquetes" />
+						</ListItem>
+						<ListItem>
+							{renderMenu}
+						</ListItem>
+					</List>
+				</Drawer>
 		</div>
 	);
 }
