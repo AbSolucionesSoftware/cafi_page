@@ -1,7 +1,9 @@
 import React from 'react'
 import { Fragment } from 'react'
 
-import { Grid } from '@material-ui/core'
+import { Grid, Box } from '@material-ui/core'
+
+import imagen from '../../image/Huawei.png'
 
 
 export default function Footer() {
@@ -9,7 +11,7 @@ export default function Footer() {
        <Fragment>
            <Grid>
                <Box align="center">
-                    
+                    {/* <img src={imagen} /> */}
                </Box>
            </Grid>
        </Fragment>
