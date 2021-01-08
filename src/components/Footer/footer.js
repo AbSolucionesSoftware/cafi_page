@@ -11,7 +11,7 @@ export default function Footer() {
        <Fragment>
            <Grid>
                <Box align="center">
-                    {/* <img src={imagen} /> */}
+                    <img src={imagen} />
                </Box>
            </Grid>
        </Fragment>
