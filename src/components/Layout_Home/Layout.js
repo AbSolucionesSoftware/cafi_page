@@ -24,7 +24,9 @@ export default function LayoutUsers(props) {
 		<ThemeProvider theme={tema === true ? darkMode : theme}>
 			<CssBaseline />
 			<div>
-				<Navegacion tema={[ darkTheme ,setDarkTheme]} />
+				<div style={{minHeight: '8vh'}}>
+					<Navegacion tema={[ darkTheme ,setDarkTheme]} />
+				</div>
 				<div style={{minHeight: '90vh'}}>
 					<LoadRoutes routes={routes} />
 				</div>
