@@ -73,19 +73,19 @@ export default function Navegacion(props) {
 		setOpen(false);
 	};
 
-	const renderMenu = (
-		<div>
-			<ListItem button onClick={darkModeAction}>
-				<ListItemIcon>{darkTheme ? <Brightness5Icon /> : <BrightnessMediumIcon />}</ListItemIcon>
-			</ListItem>
-		</div>
-	);
+	// const renderMenu = (
+	// 	<div>
+	// 		<ListItem button onClick={darkModeAction}>
+	// 			<ListItemIcon>{darkTheme ? <Brightness5Icon /> : <BrightnessMediumIcon />}</ListItemIcon>
+	// 		</ListItem>
+	// 	</div>
+	// );
 
 	return (
 		<div className={classes.root}>
 				<AppBar position="fixed" className={classes.appbar}>
 					<Toolbar>
-						<Hidden mdUp>
+						{/* <Hidden mdUp>
 							<IconButton
 								edge="start"
 								aria-label="show more"
@@ -95,7 +95,7 @@ export default function Navegacion(props) {
 							>
 								<MenuIcon />
 							</IconButton>
-						</Hidden>
+						</Hidden> */}
 						<Hidden smDown>
 							<Box>
 								<img className={classes.imagen} alt="no hay imagen" src={imagen} />
@@ -103,6 +103,13 @@ export default function Navegacion(props) {
 						</Hidden>
 						<Hidden smDown>
 							<div className={classes.grow}/>
+							<Button
+								component={Link}
+								to="/"
+								className={classes.marginButton}
+							>
+								Inicio
+							</Button>
 							<Button
 								component={Link}
 								to="/galeria"
@@ -124,7 +131,7 @@ export default function Navegacion(props) {
 							>
 								Paquetes
 							</Button>
-							{renderMenu}
+							{/* {renderMenu} */}
 						</Hidden>
 					</Toolbar>
 				</AppBar>
@@ -166,9 +173,6 @@ export default function Navegacion(props) {
 								<LocalOfferIcon/>
 							</ListItemIcon>
 							<ListItemText primary="Paquetes" />
-						</ListItem>
-						<ListItem>
-							{renderMenu}
 						</ListItem>
 					</List>
 				</Drawer>

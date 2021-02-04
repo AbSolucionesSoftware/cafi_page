@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Grid, Hidden, makeStyles, Typography } from '@material-ui/core';
+import { Box, Container, Divider, Grid, makeStyles, Typography } from '@material-ui/core';
 import DoneIcon from '@material-ui/icons/Done';
 import React, { Fragment } from 'react'
 
@@ -13,7 +13,7 @@ const stylesLocal = makeStyles((theme) => ({
     tipografia:{
         fontSize: 17,
         textAlign:'center',
-        marginTop: 7
+        marginTop: 12
     },
     fondo:{
         background: '#673de6',
@@ -58,7 +58,7 @@ export default function Paquetes() {
                         </Grid>
                         <Grid container>
                             <Grid xs={4}>
-                                <Box  mt={7}>
+                                <Box mt={7} >
                                     <Typography className={classes.tituloSec}>
                                         Personal
                                     </Typography>
@@ -68,7 +68,7 @@ export default function Paquetes() {
                                         $50 
                                     </Typography>
                                 </Box>
-                                <Box mt={3}>
+                                <Box mt={3} >
                                     <Typography  vaiant="body1" className={estilo.tipografia}>
                                         <DoneIcon className={classes.colorIcon}/> Unlimited Photos
                                     </Typography>
@@ -100,7 +100,7 @@ export default function Paquetes() {
                                         $75
                                     </Typography>
                                 </Box>
-                                <Box mt={3}>
+                                <Box mt={3} >
                                     <Typography  vaiant="body1" className={estilo.tipografia}>
                                         <DoneIcon className={classes.colorIcon}/> Unlimited Photos
                                     </Typography>
@@ -132,7 +132,7 @@ export default function Paquetes() {
                                         $99 
                                     </Typography>
                                 </Box>
-                                <Box mt={3}>
+                                <Box mt={3} mb={7}>
                                     <Typography  vaiant="body1" className={estilo.tipografia}>
                                         <DoneIcon className={classes.colorIcon}/> Unlimited Photos
                                     </Typography>

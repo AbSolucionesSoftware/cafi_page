@@ -49,7 +49,7 @@ export default function BannerPrincipal() {
                 </Box>
                 <Box className={classes.containerBotton}>
                     <Button variant="contained" color="secondary" className={classes.buton}>
-                        < GetAppIcon fontSize='large'/>
+                        <GetAppIcon fontSize='large'/>
                         Download App
                     </Button>
                 </Box>

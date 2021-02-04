@@ -1,4 +1,4 @@
-import { Backdrop, makeStyles } from '@material-ui/core';
+import {  makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     containerImage:{
@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
         width: 250,
         height: '100%'
     },
-   
+    
     imagen:{
         width: '100%',
         height: '100%'

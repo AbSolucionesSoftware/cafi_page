@@ -2,7 +2,10 @@ import React from 'react'
 
 import BannerPrincipal from '../BannerPrincipal/bannerPrincipal'
 import FrenteScroll from '../Scroll/scroll'
+import Awesome from './awesome'
 import Paquetes from '../Paquetes/paquetes';
+import Contacto from './contacto';
+import { Box } from '@material-ui/core';
 
 export default function Home() {
     return (
@@ -13,8 +16,18 @@ export default function Home() {
             <div>
                 <FrenteScroll/>
             </div>
+            <div  style={{background: "white"}}>
+                <Awesome />
+            </div>
+            <div  style={{background: "white"}}>
+                <Box >
+                    <Paquetes />
+                </Box>
+            </div>
             <div>
-                <Paquetes />
+                <Box>
+                    <Contacto />
+                </Box>
             </div>
         </div>
     )

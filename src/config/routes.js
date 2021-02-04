@@ -3,7 +3,7 @@
 import Layout from '../components/Layout_Home/Layout' 
 
 //Paginas
-import Home from '../pages/Home/home';
+import Home from '../pages/Home/Home';
 import Galeria from '../pages/Galeria/galeria'
 
 

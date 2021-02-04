@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Grid, Hidden,Typography } from '@material-ui/core';
+import { Box, Container, Divider, Grid, Typography } from '@material-ui/core';
 import React, { Fragment } from 'react'
 import { IconButton } from '@material-ui/core';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
