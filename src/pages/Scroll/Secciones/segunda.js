@@ -13,7 +13,7 @@ export default function Primera() {
         <Fragment>
             <Container>
                 <Grid container spacing={1} >
-                    <Grid xs={6}>
+                    <Grid lg={6} xs={11}>
                         <Typography component="div" variant="h4">
                             <Box textAlign="left" mt={9}>
                                 Excelente manera de describir su aplicación
@@ -34,17 +34,15 @@ export default function Primera() {
                             
                         </Typography>
                     </Grid>
-                    <Hidden mdDown>
-                    <Grid xs={6} >
-                            <Box ml={7} className={classes.containerImage}>
-                                <img 
-                                    className={classes.imagen}
-                                    src={ImagenOne}
-                                    alt="Tecnologia de Huawei" 
-                                />
-                            </Box>
-                        </Grid>
-                    </Hidden>
+                    <Grid lg={6} xs={11} >
+                        <Box ml={7} className={classes.containerImage}>
+                            <img 
+                                className={classes.imagen}
+                                src={ImagenOne}
+                                alt="Tecnologia de Huawei" 
+                            />
+                        </Box>
+                    </Grid>
                 </Grid>
             </Container>
         </Fragment>

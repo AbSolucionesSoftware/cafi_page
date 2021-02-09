@@ -1,7 +1,7 @@
-import { Accordion, AccordionSummary, Box, Button, Container, Drawer, Grid, makeStyles, TextField, Typography } from '@material-ui/core';
+import { Box, Button, Container, Grid, IconButton, makeStyles, TextField, Typography } from '@material-ui/core';
 import AndroidIcon from '@material-ui/icons/Android';
 import AppleIcon from '@material-ui/icons/Apple';
-import React, { Fragment, useState } from 'react';
+import React, {  useState } from 'react';
 import useStyles from '../estilos';
 import ImagenFondo from '../../image/foto.jpg'
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -9,26 +9,31 @@ import './contacto.scss'
 
 const stylesLocal = makeStyles((theme) => ({
     
-   containerImagen:{
+    containerImagen:{
         backgroundImage: `url(${ImagenFondo})`,
         backgroundAttachment: 'fixed',
-   },
-   textF: {
+    },
+    textF: {
         background: "white",
         borderRadius: 5,
-        width: 300
-   },
-   tipo:{
-       color:"white",
-       fontSize: 50,
-   },
-   boton: {
-       height: 56
-   },
-   botonCorreo:{
+        width: '135%'
+    },
+    textLarge: {
+        background: "white",
+        borderRadius: 5,
+        width: '50%'
+    },
+    tipo:{
+        color:"white",
+        fontSize: 45,
+    },
+    boton: {
+        height: 56
+    },
+    botonCorreo:{
         borderRadius: 100,
         fontSize: 75,
-   }
+    }
    
 }))
 
@@ -36,24 +41,16 @@ const stylesLocal = makeStyles((theme) => ({
 
 export default function Contacto() {
 
-    const [ open, setOpen ] = useState(false);
+    const [ open, setOpen ] = useState(true);
     
-    // const handleDrawerOpen = () => {
-    //     setOpen(true);
-    // };
-    
-    // const handleDrawerClose = () => {
-    //     setOpen(false);
-    // };
-
     const classes = useStyles();
     const estilo = stylesLocal();
 
     return (
-        <div>
+        <div >
             <div className="fondoImagen">
                 <Container>
-                    <Grid xs={12} >
+                    <Grid lg={12} xs={12}>
                         <Box pb={1}>
                             <Box p={1}>
                                 <Typography className={estilo.tipo} component="div" >
@@ -96,7 +93,7 @@ export default function Contacto() {
                                 </Typography>
                             </Box>
                             <Box display="flex" justifyContent="center" p={5}>
-                                <Box  pr={4}>
+                                <Box mr={10} pr={4}>
                                     <TextField 
                                         className={estilo.textF} 
                                         id="outlined-basic" 
@@ -120,40 +117,78 @@ export default function Contacto() {
                     </Grid>
                 </Container>
             </div>
-            <div>
+            <div >
                 <Container>
                     <Box textAlign="center">
-                        <Button 
+                        <IconButton 
                             variant="outlined"
+                            color="primary"
                             size="large"
                             className={estilo.botonCorreo}
                             disableRipple
-                            onClick={() => setOpen(true)}
+                            onClick={() => open === false ? (
+                                setOpen(true)
+                            ):(
+                                setOpen(false)
+                            ) }
                         >
                             <MailOutlineIcon className={estilo.botonCorreo}/>
-                        </Button>
+                        </IconButton>
                     </Box>
                     <Box>
                         {open === true ? (
-                            <Box>
-                                
+                            <Box textAlign="center">
+                               <form>
+                                   <Box display="flex" justifyContent="center" p={2} >
+                                        <Box mr={10}> 
+                                            <TextField 
+                                                className={estilo.textF} 
+                                                id="outlined-basic" 
+                                                label="Your name" 
+                                                variant="outlined" 
+                                            />
+                                        </Box>
+                                        <Box mr={10}>
+                                            <TextField 
+                                                className={estilo.textF} 
+                                                id="outlined-basic" 
+                                                label="Your mail" 
+                                                variant="outlined" 
+                                            />
+                                        </Box>
+                                    </Box>
+                                    <Box display="flex" justifyContent="center" p={1}>
+                                        <TextField
+                                            className={estilo.textLarge} 
+                                            id="outlined-basic"
+                                            label="Subject"
+                                            variant="outlined"
+                                        />
+                                    </Box>
+                                    <Box display="flex" justifyContent="center" p={1}>
+                                        <TextField
+                                            className={estilo.textLarge} 
+                                            id="outlined-basic"
+                                            label="Message"
+                                            variant="outlined"
+                                        />
+                                    </Box>
+                                    <Box mt={3}>
+                                        <Button 
+                                            variant="contained" 
+                                            color="primary"
+                                            size="large"
+                                            className={estilo.boton}
+                                            disableRipple
+                                        >
+                                            Send Message
+                                        </Button>
+                                    </Box>
+                               </form>
                             </Box>
                         ): (
                             null
                         )}
-                    {/* <Drawer  
-                        className={classes.drawer}
-                        anchor="bottom"
-                        open={open}
-                        onClose={handleDrawerClose}
-                        classes={{
-                            paper: classes.drawerPaper
-                        }}
-                    >
-                        <Box>
-
-                        </Box>
-                    </Drawer> */}
                     </Box>
                 </Container>
             </div>

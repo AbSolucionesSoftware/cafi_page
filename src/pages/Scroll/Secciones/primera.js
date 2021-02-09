@@ -14,6 +14,7 @@ export default function Primera() {
     return (
         <Fragment>
             <Container>
+            <Grid container spacing={1} >
                 {/* SECCIONES DE TITULOS */}
                 <Grid xs={12} >
                     <Typography  component="div" variant="h4" >
@@ -32,7 +33,7 @@ export default function Primera() {
                         </Box>
                     </Typography>
 
-                    <Box mt={2}>
+                    <Box mt={2} mb={5}>
                         <Divider className={classes.divisorPrincipal}/>
                     </Box>
 
@@ -40,12 +41,10 @@ export default function Primera() {
                 {/* FIN SECCION DE TITULOS */}
             
                 {/* INCIIO DE CONTENIDO PRINCIPAL */}
-                <Box mt={6}> 
                     <Grid container >
-
-                        <Grid container xs={4}>
+                        <Grid container lg={4} xs={11}>
                             <Grid xs={10}>
-                                <Box >
+                                <Box mt={6}>
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="right" className={classes.subtitulos} mt={2}>
                                             Todo lo que necesitas saber!
@@ -106,8 +105,8 @@ export default function Primera() {
                             
                         </Grid>
 
-                        <Grid container xs={4} >
-                            <Box ml={9}  className={classes.containerImgSec} >
+                        <Grid container lg={4} xs={11} >
+                            <Box ml={9} mt={5} mb={5} className={classes.containerImgSec} >
                                 <img 
                                     className={classes.imagen}
                                     src={ImagenOne}
@@ -116,7 +115,7 @@ export default function Primera() {
                             </Box>
                         </Grid>
 
-                        <Grid container xs={4}>
+                        <Grid container lg={4} xs={11}>
                             <Grid xs={2}>
                                 <Box mt="50%">
                                     <IconButton>
@@ -125,7 +124,7 @@ export default function Primera() {
                                 </Box>
                             </Grid>
                             <Grid xs={10}>
-                                <Box ml={2}>
+                                <Box ml={2} mt={6}>
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="left" className={classes.subtitulos} mt={2}>
                                             Todo lo que necesitas saber!
@@ -178,9 +177,8 @@ export default function Primera() {
                         </Grid>
 
                     </Grid>
-                </Box>
                 {/* find e contenido princiapl */}
-
+            </Grid>
             </Container>
         </Fragment>
     )

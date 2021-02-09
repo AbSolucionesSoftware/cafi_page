@@ -4,11 +4,11 @@ import { Fragment } from 'react'
 import { Grid, Box, makeStyles, Typography, Link } from '@material-ui/core';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
-
+import logo from '../../image/Logo Cafi.png'
 const useStyles = makeStyles((theme) => ({
 
     imagen:{
-        width: 145,
+        width: 220,
         height: 80
     },
     
@@ -20,9 +20,9 @@ export default function Footer() {
     return (
        <Fragment>
            <Grid>
-               <Box align="center">
+               <Box mt={5} align="center">
                     <img className={classes.imagen}
-                        src="https://portadanacional.com/wp-content/uploads/2020/11/p1202.png" 
+                        src={logo}
                         alt="Tecnologia de Huawei" 
                     />
                </Box>

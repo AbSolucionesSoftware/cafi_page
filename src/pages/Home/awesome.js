@@ -10,7 +10,7 @@ const stylesLocal = makeStyles((theme) => ({
    containerImagen:{
         width: 180,
         height: '100%',
-   }
+   },
 }))
 
 
@@ -22,10 +22,13 @@ export default function Awesome() {
 
     return (
         <div>
-                <Container>
-                    <Grid container spacing={1}>
+                    <Grid 
+                        container
+                        justify="center"
+                        alignItems="center"
+                    >
                         {/* Secciones de titulos */}
-                        <Grid xs={12} >
+                        <Grid xs={10} >
                             <Box pb={5}>
                                 <Typography component="div" variant="h4">
                                     <Box textAlign="center" mt={5}>
@@ -46,8 +49,9 @@ export default function Awesome() {
                             </Box>
                         </Grid>
                         {/* Secciones de regalos */}
-                        <Grid container>
-                            <Grid xs={4}>
+                        <Grid container justify="center"
+                        alignItems="center">
+                            <Grid xs={10} lg={3}>
                                 <Box>
                                     <Box textAlign="center" >
                                         <img 
@@ -66,7 +70,7 @@ export default function Awesome() {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid xs={4}>
+                            <Grid xs={10} lg={3}>
                             <Box>
                                     <Box textAlign="center" >
                                         <img 
@@ -85,7 +89,7 @@ export default function Awesome() {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid xs={4}>
+                            <Grid xs={10} lg={3}>
                                 <Box>
                                     <Box textAlign="center" >
                                         <img 
@@ -106,7 +110,6 @@ export default function Awesome() {
                             </Grid>
                         </Grid>
                     </Grid>
-                </Container>
         </div>
     )
 }

@@ -2,14 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import routes from './config/routes';
 import { Helmet } from 'react-helmet';
-import './styles.scss';
+import './scss/styles.scss';
 
 function App() {
 	return (
-		<div className="App">
+		<div>
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>UNILINE</title>
+				<title>CAFI - Tu tienda en linea</title>
 			</Helmet>
 			<Router>
 				<Switch>{routes.map((route, index) => <RoutesWithSubRoutes key={index} {...route} />)}</Switch>

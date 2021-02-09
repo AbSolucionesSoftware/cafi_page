@@ -44,13 +44,23 @@ const useStyles = makeStyles((theme) => ({
 
     divisor:{
         textAlign: "left",
-        width: '30%',
+        // width: '5%',
         background: '#673de6'
     },
     divisorPrincipal:{
         marginLeft: '39%',
         width: '20%',
         background: '#673de6'
+    },
+
+    imagenes:{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    video:{
+        maxWidth: "100%",
+        maxHeight: "100%"
     }
 }));
 

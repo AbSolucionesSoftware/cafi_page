@@ -1,6 +1,6 @@
 import React from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
-import { Box, Container } from '@material-ui/core';
+import { Box, Container, Grid } from '@material-ui/core';
 
 import Primera from './Secciones/primera';
 import Segunda from './Secciones/segunda';
@@ -41,20 +41,23 @@ export default function FrenteScroll() {
 
 	return (
 		<div>
-			<Box>
-				
-				<Box height="auto" textAlign="center" display="flex" justifyContent="center" alignItems="center">
-					<Container>
-						<Parallax
-							animation={{ x: 0, opacity: 1, playScale: [ 0, 0.6 ] }}
-							style={{ transform: 'translateX(300px)', opacity: 0 }}
-						>
-							<Box my={5}>
-								<Primera />
-							</Box>
-						</Parallax>
-
-					</Container>
+			<Container>
+			<Grid  xs={12}>
+				<Box
+                    height="auto"
+                    textAlign="center"
+					display="flex"
+					justifyContent="center"
+					alignItems="center"
+                >
+					<Parallax
+						animation={{ x: 0, opacity: 1, playScale: [ 0.0, 0.8 ] }}
+						style={{ transform: 'translateX(100px)', opacity: 0 }}
+					>
+						<Box my={5}>
+							<Primera/>
+						</Box>
+					</Parallax>
 				</Box>
 				<Box
                     height='auto'
@@ -65,7 +68,7 @@ export default function FrenteScroll() {
                 >
 						<Parallax
 							animation={{ x: 0, opacity: 1, playScale: [ 0.0, 0.8 ] }}
-							style={{ transform: 'translateX(-300px)', opacity: 0 }}
+							style={{ transform: 'translateX(-100px)', opacity: 0 }}
 						>
 							<Box my={5}>
 							<Tercera />
@@ -82,7 +85,7 @@ export default function FrenteScroll() {
                 >
 						<Parallax
 							animation={{ x: 0, opacity: 1, playScale: [ 0.0, 0.8 ] }}
-							style={{ transform: 'translateX(300px)', opacity: 0 }}
+							style={{ transform: 'translateX(100px)', opacity: 0 }}
 						>
 							<Box my={5}>
 								<Segunda/>
@@ -99,16 +102,15 @@ export default function FrenteScroll() {
                 >
 						<Parallax
 							animation={{ x: 0, opacity: 1, playScale: [ 0.0, 0.8 ] }}
-							style={{ transform: 'translateX(-300px)', opacity: 0 }}
+							style={{ transform: 'translateX(-100px)', opacity: 0 }}
 						>
 							<Box my={5}>
 								<Cuarta/>
 							</Box>
 						</Parallax>
 				</Box>
-
-				
-			</Box>
+			</Grid>
+			</Container>
 		</div>
 	);
 }

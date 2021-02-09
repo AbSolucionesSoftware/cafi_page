@@ -14,18 +14,16 @@ export default function Tercera() {
         <Fragment>
             <Container>
                 <Grid container spacing={1} >
-                    <Hidden mdDown>
-                        <Grid xs={6} >
-                            <Box className={classes.containerImage}>
-                                <img 
-                                    className={classes.imagen}
-                                    src={ImagenOne}
-                                    alt="Tecnologia de Huawei" 
-                                />
-                            </Box>
-                        </Grid>
-                    </Hidden>
-                    <Grid xs={6}>
+                    <Grid lg={6} xs={11} >
+                        <Box className={classes.containerImage}>
+                            <img 
+                                className={classes.imagen}
+                                src={ImagenOne}
+                                alt="Tecnologia de Huawei" 
+                            />
+                        </Box>
+                    </Grid>
+                    <Grid lg={6} xs={11}>
                         <Typography component="div" variant="h4">
                             <Box textAlign="left" mt={9}>
                                 Todo lo que necesitas saber!

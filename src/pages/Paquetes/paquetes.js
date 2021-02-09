@@ -38,7 +38,7 @@ export default function Paquetes() {
         <Fragment>
             <Container>
                 <Grid container spacing={1} >
-                        <Grid xs={12}>
+                        <Grid lg={12} xs={11}>
                             <Typography component="div" variant="h4">
                                 <Box textAlign="center" mt={5}>
                                     Affordable Packages
@@ -57,7 +57,7 @@ export default function Paquetes() {
                             </Box>
                         </Grid>
                         <Grid container>
-                            <Grid xs={4}>
+                            <Grid lg={4} md={4} xs={11}>
                                 <Box mt={7} >
                                     <Typography className={classes.tituloSec}>
                                         Personal
@@ -89,7 +89,7 @@ export default function Paquetes() {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid xs={4}>
+                            <Grid lg={4} md={4} xs={11}>
                                 <Box mt={7}>
                                     <Typography  className={classes.tituloSec}>
                                         Business
@@ -121,7 +121,7 @@ export default function Paquetes() {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid  xs={4}>
+                            <Grid lg={4} md={4} xs={11}>
                                 <Box mt={7}> 
                                     <Typography  className={classes.tituloSec}>
                                         Ultimate

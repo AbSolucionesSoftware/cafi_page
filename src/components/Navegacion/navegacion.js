@@ -3,25 +3,22 @@ import { Link } from 'react-router-dom';
 //MATERIAL UI
 import { AppBar, Box, Button, Drawer, Hidden, IconButton,List, Toolbar} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 //ICONOS
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import BrightnessMediumIcon from '@material-ui/icons/BrightnessMedium';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import Brightness5Icon from '@material-ui/icons/Brightness5';
 import ErrorIcon from '@material-ui/icons/Error';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import HomeIcon from '@material-ui/icons/Home';
-
+import MenuIcon from '@material-ui/icons/Menu';
 
 import { deepOrange } from '@material-ui/core/colors';
 
 //otros
-import imagen from '../../image/Huawei.png'
+import imagen from '../../image/Logo Cafi.png'
 
 const useStyles = makeStyles((theme) => ({
 	grow: {
@@ -42,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: deepOrange[500]
 	},
 	imagen:{
-		width: 110,
+		width: 150,
 		height: 55
 	},
 	marginButton: {
@@ -55,15 +52,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Navegacion(props) {
-	const [ darkTheme, setDarkTheme ] = props.tema;
+	// const [ darkTheme, setDarkTheme ] = props.tema;
 	const [ open, setOpen ] = useState(false);
 
 	const classes = useStyles();
 
-	const darkModeAction = () => {
-		setDarkTheme(!darkTheme);
-		localStorage.setItem('tema', !darkTheme);
-	};
+	// const darkModeAction = () => {
+	// 	setDarkTheme(!darkTheme);
+	// 	localStorage.setItem('tema', !darkTheme);
+	// };
 
 	const handleDrawerOpen = () => {
 		setOpen(true);
@@ -82,10 +79,10 @@ export default function Navegacion(props) {
 	// );
 
 	return (
-		<div className={classes.root}>
-				<AppBar position="fixed" className={classes.appbar}>
+		<div className="fondo">
+				<AppBar className={classes.appbar}>
 					<Toolbar>
-						{/* <Hidden mdUp>
+						<Hidden mdUp>
 							<IconButton
 								edge="start"
 								aria-label="show more"
@@ -95,7 +92,7 @@ export default function Navegacion(props) {
 							>
 								<MenuIcon />
 							</IconButton>
-						</Hidden> */}
+						</Hidden>
 						<Hidden smDown>
 							<Box>
 								<img className={classes.imagen} alt="no hay imagen" src={imagen} />
