@@ -42,27 +42,7 @@ export default function Primera() {
             
                 {/* INCIIO DE CONTENIDO PRINCIPAL */}
                     <Grid container >
-                        <Grid container lg={4} xs={11}>
-                            <Grid xs={10}>
-                                <Box mt={6}>
-                                    <Typography component="div" variant="h4" >
-                                        <Box textAlign="right" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
-                                        </Box>
-                                        <Box textAlign="right" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </Box>
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                            <Grid xs={2}>
-                                <Box mt="50%">
-                                    <IconButton>
-                                        <AccountCircleIcon className={classes.iconBoton}/>
-                                    </IconButton>
-                                </Box>
-                            </Grid>
-
+                        <Grid container lg={4} xs={12}>
                             <Grid xs={10}>
                                 <Box >
                                     <Typography component="div" variant="h4" >
@@ -102,20 +82,40 @@ export default function Primera() {
                                     </IconButton>
                                 </Box>
                             </Grid>
-                            
+
+                            <Grid xs={10}>
+                                <Box >
+                                    <Typography component="div" variant="h4" >
+                                        <Box textAlign="right" className={classes.subtitulos} mt={2}>
+                                            Todo lo que necesitas saber!
+                                        </Box>
+                                        <Box textAlign="right" className={classes.tipografia} mt={2}>
+                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        </Box>
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                            <Grid xs={2}>
+                                <Box mt="50%">
+                                    <IconButton>
+                                        <AccountCircleIcon className={classes.iconBoton}/>
+                                    </IconButton>
+                                </Box>
+                            </Grid>
                         </Grid>
-
-                        <Grid container lg={4} xs={11} >
-                            <Box ml={9} mt={5} mb={5} className={classes.containerImgSec} >
-                                <img 
-                                    className={classes.imagen}
-                                    src={ImagenOne}
-                                    alt="Celular" 
-                                />
+                        <Grid container lg={4} xs={12} >
+                            <Box mb={5}>
+                                <Box display="flex" justifyContent="center" ml={5} mt={5} className={classes.containerImgSec} >
+                                    <img 
+                                        className={classes.imagen}
+                                        src={ImagenOne}
+                                        alt="Celular" 
+                                    />
+                                </Box>
                             </Box>
                         </Grid>
 
-                        <Grid container lg={4} xs={11}>
+                        <Grid container lg={4} xs={12}>
                             <Grid xs={2}>
                                 <Box mt="50%">
                                     <IconButton>
@@ -124,45 +124,7 @@ export default function Primera() {
                                 </Box>
                             </Grid>
                             <Grid xs={10}>
-                                <Box ml={2} mt={6}>
-                                    <Typography component="div" variant="h4" >
-                                        <Box textAlign="left" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
-                                        </Box>
-                                        <Box textAlign="left" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </Box>
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                            <Grid xs={2}>
-                                <Box mt="50%">
-                                    <IconButton>
-                                        <AccountCircleIcon className={classes.iconBoton}/>
-                                    </IconButton>
-                                </Box>
-                            </Grid>
-                            <Grid xs={10}>
-                                <Box ml={2}>
-                                    <Typography component="div" variant="h4" >
-                                        <Box textAlign="left" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
-                                        </Box>
-                                        <Box textAlign="left" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
-                                        </Box>
-                                    </Typography>
-                                </Box>
-                            </Grid>
-                            <Grid xs={2}>
-                                <Box mt="50%">
-                                    <IconButton>
-                                        <AccountCircleIcon className={classes.iconBoton}/>
-                                    </IconButton>
-                                </Box>
-                            </Grid>
-                            <Grid xs={10}>
-                                <Box ml={2}>
+                                <Box ml={3}>
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="left" className={classes.subtitulos} mt={2}>
                                             Todo lo que necesitas saber!
@@ -174,8 +136,46 @@ export default function Primera() {
                                 </Box>
                             </Grid>
 
+                            <Grid xs={2}>
+                                <Box mt="50%">
+                                    <IconButton>
+                                        <AccountCircleIcon className={classes.iconBoton}/>
+                                    </IconButton>
+                                </Box>
+                            </Grid>
+                            <Grid xs={10}>
+                                <Box ml={3}>
+                                    <Typography component="div" variant="h4" >
+                                        <Box textAlign="left" className={classes.subtitulos} mt={2}>
+                                            Todo lo que necesitas saber!
+                                        </Box>
+                                        <Box textAlign="left" className={classes.tipografia} mt={2}>
+                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        </Box>
+                                    </Typography>
+                                </Box>
+                            </Grid>
+
+                            <Grid xs={2}>
+                                <Box mt="50%">
+                                    <IconButton>
+                                        <AccountCircleIcon className={classes.iconBoton}/>
+                                    </IconButton>
+                                </Box>
+                            </Grid>
+                            <Grid xs={10}>
+                                <Box ml={3}>
+                                    <Typography component="div" variant="h4" >
+                                        <Box textAlign="left" className={classes.subtitulos} mt={2}>
+                                            Todo lo que necesitas saber!
+                                        </Box>
+                                        <Box textAlign="left" className={classes.tipografia} mt={2}>
+                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        </Box>
+                                    </Typography>
+                                </Box>
+                            </Grid>
                         </Grid>
-
                     </Grid>
                 {/* find e contenido princiapl */}
             </Grid>

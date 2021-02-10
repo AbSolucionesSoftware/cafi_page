@@ -18,6 +18,9 @@ const stylesLocal = makeStyles((theme) => ({
     fondo:{
         background: '#673de6',
     },
+    fondoColor:{
+        background: '#F8E9FF',
+    },
     blanco:{
         fontSize: 35,
         textAlign:'center',
@@ -58,17 +61,17 @@ export default function Paquetes() {
                         </Grid>
                         <Grid container>
                             <Grid lg={4} md={4} xs={11}>
-                                <Box mt={7} >
+                                <Box mt={7} className={estilo.fondoColor}>
                                     <Typography className={classes.tituloSec}>
                                         Personal
                                     </Typography>
                                 </Box>
-                                <Box mt={3}>
+                                <Box mt={2}>
                                     <Typography  className={estilo.precio}>
                                         $50 
                                     </Typography>
                                 </Box>
-                                <Box mt={3} >
+                                <Box mt={4} className={estilo.fondoColor}>
                                     <Typography  vaiant="body1" className={estilo.tipografia}>
                                         <DoneIcon className={classes.colorIcon}/> Unlimited Photos
                                     </Typography>
@@ -100,7 +103,7 @@ export default function Paquetes() {
                                         $75
                                     </Typography>
                                 </Box>
-                                <Box mt={3} >
+                                <Box mt={3}>
                                     <Typography  vaiant="body1" className={estilo.tipografia}>
                                         <DoneIcon className={classes.colorIcon}/> Unlimited Photos
                                     </Typography>
@@ -122,7 +125,7 @@ export default function Paquetes() {
                                 </Box>
                             </Grid>
                             <Grid lg={4} md={4} xs={11}>
-                                <Box mt={7}> 
+                                <Box mt={7} className={estilo.fondoColor}> 
                                     <Typography  className={classes.tituloSec}>
                                         Ultimate
                                     </Typography>
@@ -132,7 +135,7 @@ export default function Paquetes() {
                                         $99 
                                     </Typography>
                                 </Box>
-                                <Box mt={3} mb={7}>
+                                <Box mt={3} mb={7} className={estilo.fondoColor} >
                                     <Typography  vaiant="body1" className={estilo.tipografia}>
                                         <DoneIcon className={classes.colorIcon}/> Unlimited Photos
                                     </Typography>

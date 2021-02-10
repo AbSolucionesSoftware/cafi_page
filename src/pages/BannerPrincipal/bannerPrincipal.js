@@ -1,10 +1,9 @@
 import React from 'react'
-
 import { Box, Button, Grid, makeStyles } from '@material-ui/core'
 import { Fragment } from 'react'
 import GetAppIcon from '@material-ui/icons/GetApp';
 
-import banner from '../../image/Banner.jpg';
+import banner from '../../image/BannerLogo.PNG';
 
 const useStyles = makeStyles((theme) => ({
     principal:{
@@ -16,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
     containerImagen:{
         width: '100%',
-        height: 680,
+        // height: '95%',
         position: 'relative',
         zIndex: 80
     },
@@ -47,12 +46,12 @@ export default function BannerPrincipal() {
                         alt="Banner principal publicitario" 
                     />
                 </Box>
-                <Box className={classes.containerBotton}>
+                {/* <Box className={classes.containerBotton}>
                     <Button variant="contained" color="secondary" className={classes.buton}>
                         <GetAppIcon fontSize='large'/>
                         Download App
                     </Button>
-                </Box>
+                </Box> */}
             </Grid>
         </Fragment>
         

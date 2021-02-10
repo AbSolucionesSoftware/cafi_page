@@ -6,6 +6,8 @@ import useStyles from '../estilos';
 import ImagenFondo from '../../image/foto.jpg'
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import './contacto.scss'
+import { StayPrimaryLandscape } from '@material-ui/icons';
+import { blue } from '@material-ui/core/colors';
 
 const stylesLocal = makeStyles((theme) => ({
     
@@ -14,14 +16,14 @@ const stylesLocal = makeStyles((theme) => ({
         backgroundAttachment: 'fixed',
     },
     textF: {
+        width: "130%", 
         background: "white",
         borderRadius: 5,
-        width: '135%'
     },
     textLarge: {
+        width: "50%", 
         background: "white",
         borderRadius: 5,
-        width: '50%'
     },
     tipo:{
         color:"white",
@@ -59,8 +61,8 @@ export default function Contacto() {
                                     </Box>
                                 </Typography>
                             </Box>
-                                <Box display="flex" justifyContent="center" p={5}>
-                                    <Box pr={4}>
+                                <Box display="flex" justifyContent="center"  p={5}>
+                                    <Box pr={3}>
                                         <Button
                                             variant="contained" 
                                             color="primary"
@@ -92,8 +94,8 @@ export default function Contacto() {
                                     </Box>
                                 </Typography>
                             </Box>
-                            <Box display="flex" justifyContent="center" p={5}>
-                                <Box mr={10} pr={4}>
+                            <Box display="flex" justifyContent="center" flexWrap="wrap" p={5}>
+                                <Box mr={2} mt={3}>
                                     <TextField 
                                         className={estilo.textF} 
                                         id="outlined-basic" 
@@ -101,7 +103,7 @@ export default function Contacto() {
                                         variant="outlined" 
                                     />
                                 </Box>
-                                <Box>
+                                <Box ml={7} mt={3}>
                                     <Button 
                                         variant="contained" 
                                         color="primary"
@@ -139,23 +141,21 @@ export default function Contacto() {
                         {open === true ? (
                             <Box textAlign="center">
                                <form>
-                                   <Box display="flex" justifyContent="center" p={2} >
-                                        <Box mr={10}> 
-                                            <TextField 
-                                                className={estilo.textF} 
-                                                id="outlined-basic" 
-                                                label="Your name" 
-                                                variant="outlined" 
-                                            />
-                                        </Box>
-                                        <Box mr={10}>
-                                            <TextField 
-                                                className={estilo.textF} 
-                                                id="outlined-basic" 
-                                                label="Your mail" 
-                                                variant="outlined" 
-                                            />
-                                        </Box>
+                                    <Box display="flex" justifyContent="center" p={1}>
+                                        <TextField 
+                                            className={estilo.textLarge} 
+                                            id="outlined-basic" 
+                                            label="Your name" 
+                                            variant="outlined" 
+                                        />
+                                    </Box>
+                                    <Box display="flex" justifyContent="center" p={1}>
+                                        <TextField 
+                                            className={estilo.textLarge} 
+                                            id="outlined-basic" 
+                                            label="Your mail" 
+                                            variant="outlined" 
+                                        />
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
@@ -167,7 +167,7 @@ export default function Contacto() {
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
-                                            className={estilo.textLarge} 
+                                            className={estilo.textLarge}
                                             id="outlined-basic"
                                             label="Message"
                                             variant="outlined"

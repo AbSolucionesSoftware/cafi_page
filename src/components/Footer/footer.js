@@ -20,7 +20,7 @@ export default function Footer() {
     return (
        <Fragment>
            <Grid>
-               <Box mt={5} align="center">
+               <Box mt={8} align="center">
                     <img className={classes.imagen}
                         src={logo}
                         alt="Tecnologia de Huawei" 

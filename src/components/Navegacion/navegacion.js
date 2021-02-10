@@ -107,7 +107,7 @@ export default function Navegacion(props) {
 							>
 								Inicio
 							</Button>
-							<Button
+							{/* <Button
 								component={Link}
 								to="/galeria"
 								className={classes.marginButton}
@@ -127,7 +127,7 @@ export default function Navegacion(props) {
 								className={classes.marginButton}
 							>
 								Paquetes
-							</Button>
+							</Button> */}
 							{/* {renderMenu} */}
 						</Hidden>
 					</Toolbar>
@@ -147,13 +147,16 @@ export default function Navegacion(props) {
 						</IconButton>
 					</div>
 					<List>
+						<Box>
+							<img className={classes.imagen} alt="no hay imagen" src={imagen} />
+						</Box>
 						<ListItem button component={Link} to="/" onClick={handleDrawerClose}>
 							<ListItemIcon>
 								<HomeIcon />
 							</ListItemIcon>
 							<ListItemText primary="Inicio" />
 						</ListItem>
-						<ListItem button component={Link} to="/galeria" onClick={handleDrawerClose}>
+						{/* <ListItem button component={Link} to="/galeria" onClick={handleDrawerClose}>
 							<ListItemIcon>
 								<PhotoLibraryIcon />
 							</ListItemIcon>
@@ -170,7 +173,7 @@ export default function Navegacion(props) {
 								<LocalOfferIcon/>
 							</ListItemIcon>
 							<ListItemText primary="Paquetes" />
-						</ListItem>
+						</ListItem> */}
 					</List>
 				</Drawer>
 		</div>

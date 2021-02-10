@@ -2,11 +2,11 @@ import {  makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     containerImage:{
-        width: 400,
+        width: "80%",
         height: '100%'
     },
     containerImgSec:{
-        width: 250,
+        width: "80%",
         height: '100%'
     },
     
@@ -58,9 +58,16 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center"
     },
+    cajaVideo:{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100%",
+        width: "100%"
+    },
     video:{
-        maxWidth: "100%",
-        maxHeight: "100%"
+        width: "100%",
+        height: "100%"
     }
 }));
 

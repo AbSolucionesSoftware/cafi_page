@@ -6,7 +6,7 @@ import Awesome from './awesome'
 import Paquetes from '../Paquetes/paquetes';
 import Contacto from './contacto';
 import Carrusel_Screens from './carrusel_screens'
-import { Box } from '@material-ui/core';
+import { Box, Container } from '@material-ui/core';
 
 export default function Home() {
     return (
@@ -14,14 +14,16 @@ export default function Home() {
             <div>
                 <BannerPrincipal/>
             </div>
-            <div>
+            <Container>
                 <FrenteScroll/>
-            </div>
+            </Container>
             <div  style={{background: "white"}}>
                 <Awesome />
             </div>
             <div>
+            <Container>
                 <Carrusel_Screens />
+            </Container>
             </div>
             <div  style={{background: "white"}}>
                 <Box >

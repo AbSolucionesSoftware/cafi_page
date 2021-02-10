@@ -22,7 +22,7 @@ export default function LayoutUsers(props) {
 
 	return (
 		<ThemeProvider theme={tema === true ? darkMode : theme}>
-			<CssBaseline />
+			{/* <CssBaseline /> */}
 			<div>
 				<div style={{minHeight: '8vh'}}>
 					<Navegacion />

@@ -14,7 +14,7 @@ export default function Tercera() {
         <Fragment>
             <Container>
                 <Grid container spacing={1} >
-                    <Grid lg={6} xs={11} >
+                    <Grid lg={6} xs={12} >
                         <Box className={classes.containerImage}>
                             <img 
                                 className={classes.imagen}

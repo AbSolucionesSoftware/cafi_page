@@ -39,7 +39,7 @@ const responsive = {
       items: 1
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 400, min: 0 },
       items: 1
     }
 };
@@ -74,9 +74,11 @@ export default function Carrusel_Screens() {
             <Box mt={5} mb={5} >
                 <Carousel 
                     responsive={responsive} 
-                    autoPlay
-                    autoPlaySpeed={3000}
                     showDots
+                    sliderClass=""
+                    swipeable
+                    // autoPlay
+                    // autoPlaySpeed={3000}
                     // containerClass="container"
                 >
                     <Box className={estilos.containerImagen}>
