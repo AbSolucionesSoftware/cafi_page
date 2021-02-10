@@ -21,8 +21,6 @@ export default function LayoutUsers(props) {
 	}, [tema]);
 
 	return (
-		<ThemeProvider theme={tema === true ? darkMode : theme}>
-			{/* <CssBaseline /> */}
 			<div>
 				<div style={{minHeight: '8vh'}}>
 					<Navegacion />
@@ -34,7 +32,6 @@ export default function LayoutUsers(props) {
 					<Footer />
 				</div>
 			</div>
-		</ThemeProvider>
 	);
 }
 
