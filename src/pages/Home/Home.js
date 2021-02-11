@@ -14,16 +14,16 @@ export default function Home() {
             <div>
                 <BannerPrincipal/>
             </div>
-            <Container>
-                <FrenteScroll/>
-            </Container>
+                <Container>
+                    <FrenteScroll/>
+                </Container>
             <div  style={{background: "white"}}>
                 <Awesome />
             </div>
             <div>
-            <Container>
-                <Carrusel_Screens />
-            </Container>
+                <Container>
+                    <Carrusel_Screens />
+                </Container>
             </div>
             <div  style={{background: "white"}}>
                 <Box >
