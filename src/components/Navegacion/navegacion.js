@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1
 	},
 	appbar: {
-		backgroundColor: theme.palette.navbar
+		backgroundColor: 'white'
 	},
 	title: {
 		display: 'none',
