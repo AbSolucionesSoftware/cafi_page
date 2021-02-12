@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box, Button, Grid, makeStyles } from '@material-ui/core'
+import { Box, Grid, makeStyles } from '@material-ui/core'
 import { Fragment } from 'react'
-import GetAppIcon from '@material-ui/icons/GetApp';
+// import GetAppIcon from '@material-ui/icons/GetApp';
 
 import banner from '../../image/BannerLogo.PNG';
 

@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import imagen1 from '../../image/screen.jpg'
 import imagen2 from '../../image/screen 2.jpg'
-import { Box, Divider, Grid, IconButton, makeStyles, Typography } from '@material-ui/core';
+import { Box, Divider, Grid, makeStyles, Typography } from '@material-ui/core';
 import useStyles from '../estilos';
 
 const stylesLocal = makeStyles((theme) => ({
@@ -85,11 +85,13 @@ export default function Carrusel_Screens() {
                         <img
                             className={estilos.imagen}
                             src={imagen2}
+                            alt="imagen"
                         />
                         
                     </Box>
                     <Box className={estilos.containerImagen}>
                         <img
+                            alt="imagen"
                             className={estilos.imagen}
                             src={imagen1}
                         />
@@ -99,6 +101,7 @@ export default function Carrusel_Screens() {
                         <img
                             className={estilos.imagen}
                             src={imagen2}
+                            alt="imagen"
                         />
                         
                     </Box>
@@ -106,6 +109,7 @@ export default function Carrusel_Screens() {
                         <img
                             className={estilos.imagen}
                             src={imagen1}
+                            alt="imagen"
                         />
                         
                     </Box>
@@ -113,6 +117,7 @@ export default function Carrusel_Screens() {
                         <img
                             className={estilos.imagen}
                             src={imagen2}
+                            alt="imagen"
                         />
                         
                     </Box>
@@ -120,6 +125,7 @@ export default function Carrusel_Screens() {
                         <img
                             className={estilos.imagen}
                             src={imagen1}
+                            alt="imagen"
                         />
                         
                     </Box>
@@ -127,6 +133,7 @@ export default function Carrusel_Screens() {
                         <img
                             className={estilos.imagen}
                             src={imagen2}
+                            alt="imagen"
                         />
                         
                     </Box>
@@ -134,6 +141,7 @@ export default function Carrusel_Screens() {
                         <img
                             className={estilos.imagen}
                             src={imagen1}
+                            alt="imagen"
                         />
                         
                     </Box>

@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Grid, makeStyles, Typography } from '@material-ui/core';
+import { Box, Divider, Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 import useStyles from '../estilos';
 import ImagenOne from '../../image/regalo.PNG'

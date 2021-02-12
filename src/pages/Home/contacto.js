@@ -6,8 +6,8 @@ import useStyles from '../estilos';
 import ImagenFondo from '../../image/foto.jpg'
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import './contacto.scss'
-import { StayPrimaryLandscape } from '@material-ui/icons';
-import { blue } from '@material-ui/core/colors';
+// import { StayPrimaryLandscape } from '@material-ui/icons';
+// import { blue } from '@material-ui/core/colors';
 
 const stylesLocal = makeStyles((theme) => ({
     
@@ -45,7 +45,7 @@ export default function Contacto() {
 
     const [ open, setOpen ] = useState(true);
     
-    const classes = useStyles();
+    // const classes = useStyles();
     const estilo = stylesLocal();
 
     return (

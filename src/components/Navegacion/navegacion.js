@@ -8,10 +8,10 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 //ICONOS
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+// import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ErrorIcon from '@material-ui/icons/Error';
-import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+// import ErrorIcon from '@material-ui/icons/Error';
+// import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
 
