@@ -11,7 +11,7 @@ import { Box, Container } from '@material-ui/core';
 export default function Home() {
     return (
         <div>
-            <div>
+            <div> 
                 <BannerPrincipal/>
             </div>
             <Container>
