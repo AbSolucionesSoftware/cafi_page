@@ -72,7 +72,7 @@ export default function FrenteScroll() {
 								style={{ transform: 'translateX(-100px)', opacity: 0 }}
 							>
 								<Box my={5}>
-								<Tercera />
+									<Tercera />
 								</Box>
 							</Parallax>
 					</Box>

@@ -16,7 +16,7 @@ export default function Primera() {
                     <Grid lg={6} xs={11}>
                         <Typography component="div" variant="h4">
                             <Box textAlign="left" mt={9}>
-                                Excelente manera de describir su aplicación
+                                CAFI tu tienda en línea, en una APP MOVIL 
                             </Box>
                         </Typography>
                         <Box className={classes.margenes}>
@@ -24,14 +24,16 @@ export default function Primera() {
                             <Divider variant="inset" className={classes.divisor}/>
                         
                         </Box>
-                        <Typography component="div" variant="body1" className={classes.tipografia}>
+                        <Typography component="div" className={classes.tipografia}>
                             <Box  className={classes.margenes}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Al adquirir nuestros servicios tendras la posibilidad de poder obtener tu propia App Movil.
                             </Box>
                             <Box  className={classes.margenes}>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Una mayor experiencia para tus usuarios. Podran encontrarte mas rapido desde la PlayStore, para poder consultar mas rapido tus productos
                             </Box>
-                            
+                            <Box  className={classes.margenes}>
+                                Mismos productos, misma publicidad, mismas promociones, todo desde tu propia aplicación. Estar a la vanguardia del mercado digital nunca fue tan facil.
+                            </Box>
                         </Typography>
                     </Grid>
                     <Grid lg={6} xs={11} >

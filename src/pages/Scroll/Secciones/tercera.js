@@ -26,7 +26,7 @@ export default function Tercera() {
                     <Grid lg={6} xs={11}>
                         <Typography component="div" variant="h4">
                             <Box textAlign="left" mt={9}>
-                                Todo lo que necesitas saber!
+                                ¡Todo lo que obtienes con CAFI!
                             </Box>
                         </Typography>
                         <Box className={classes.margenes}>
@@ -35,20 +35,48 @@ export default function Tercera() {
                         
                         </Box>
                         <Typography component="div" variant="body1" className={classes.tipografia}>
-                            <Box  className={classes.margenes}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <Box className={classes.margenes}>
+                                Tú, como dueño de tu tienda en línea tendrás acceso a un panel de administrador donde estarán todos los apartados y secciones de tu tienda 100% editables para que le des el diseño y estructura que siempre habías soñado.
                             </Box>
-                            <Box  className={classes.margenes}>
-                                <DoneAllIcon className={classes.colorIcon} />Plataforma confiable y segura
+                            <Box display="flex" alignItems="center" className={classes.margenes}>
+                                <Box p={1}>
+                                    <DoneAllIcon className={classes.colorIcon} />
+                                </Box>
+                                <Box>
+                                    Editar la información de tu tienda
+                                </Box>
                             </Box>
-                            <Box  className={classes.margenes}>
-                                <DoneAllIcon className={classes.colorIcon} />Todo está perfectamente organizado para el futuro.
+                            <Box display="flex" alignItems="center" className={classes.margenes}>
+                                <Box p={1}>
+                                    <DoneAllIcon className={classes.colorIcon} />
+                                </Box>
+                                <Box>
+                                    Configurar cuales serán tus políticas de envió, políticas de privacidad y de imagen corporativa
+                                </Box>
                             </Box>
-                            <Box  className={classes.margenes}>
-                                <DoneAllIcon className={classes.colorIcon} />Adjunte archivos grandes fácilmente
+                            <Box display="flex" alignItems="center" className={classes.margenes}>
+                                <Box p={1}>
+                                    <DoneAllIcon className={classes.colorIcon} />
+                                </Box>
+                                <Box>
+                                    Un apartado exclusivo donde puedes subir una historia de tu empresa.
+                                </Box> 
                             </Box>
-                            <Box  className={classes.margenes}>
-                                <DoneAllIcon className={classes.colorIcon} />Un montón de funciones y fácil de usar y personalizar
+                            <Box display="flex" alignItems="center" className={classes.margenes}>
+                                <Box p={1}>
+                                    <DoneAllIcon className={classes.colorIcon} />
+                                </Box>
+                                <Box>
+                                    Podras editar el logo de tu negocio, datos principales de contacto, ubicación
+                                </Box>
+                            </Box>
+                            <Box display="flex" alignItems="center" className={classes.margenes}>
+                                <Box p={1}>
+                                    <DoneAllIcon className={classes.colorIcon} />
+                                </Box>
+                                <Box>
+                                    Tienes un apartado de publicidad donde en este apartado puedes subir una sección completa con un banner y los productos de una categoría en especial en la página principal.
+                                </Box>
                             </Box>
                         </Typography>
 

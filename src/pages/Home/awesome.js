@@ -32,7 +32,7 @@ export default function Awesome() {
                             <Box pb={5}>
                                 <Typography component="div" variant="h4">
                                     <Box textAlign="center" mt={5}>
-                                        It's Awesome
+                                        Beneficios incleibles!
                                     </Box>
                                 </Typography>
                                 <Box textAlign="center" mt={1}> 
@@ -40,7 +40,7 @@ export default function Awesome() {
                                 </Box>
                                 <Typography component="div" variant="body1">
                                     <Box textAlign="center" mt={3}>
-                                        List your app features and all the details Lorem ipsum dolor kadr
+                                        Adquiere grandiosos beneficios con nosotros al adquirir tu propia tienda
                                     </Box>
                                 </Typography>
                                 <Box textAlign="center" mt={1}> 
@@ -62,10 +62,10 @@ export default function Awesome() {
                                     </Box>
                                     <Typography component="div">
                                         <Box textAlign="center" mt={5} className={classes.tituloSec}>
-                                            Your Data in Cloud
+                                            Tu propio Dominio
                                         </Box>
                                         <Box textAlign="center" pr={3} pl={3} className={classes.tipografia} mt={2}>
-                                            Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+                                            Adquiere tu propio dominio, que sea tan unico como tu negocio, para que tus clientes te identifiquen mas rapido en la Web.                                            
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -81,10 +81,10 @@ export default function Awesome() {
                                     </Box>
                                     <Typography component="div">
                                         <Box textAlign="center" mt={5} className={classes.tituloSec}>
-                                            Monthly Rewards
+                                            Almacenamiento
                                         </Box>
                                         <Box textAlign="center" pr={3} pl={3} className={classes.tipografia} mt={2}>
-                                            Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+                                            No deberas preocuparte por una relacion dentro del almacenamiento y podras registrar los productos que quieras.                                            
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -100,10 +100,11 @@ export default function Awesome() {
                                     </Box>
                                     <Typography component="div">
                                         <Box textAlign="center" mt={5} className={classes.tituloSec}>
-                                            24/7 Support
+                                            Variedad de Diseños
                                         </Box>
                                         <Box textAlign="center" pr={3} pl={3} className={classes.tipografia} mt={2}>
-                                            Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+                                            Al adquirir tu tienda en linea podras elegir entre algunos de nuestros diferentes templates que tenemos para ofrecerte.
+                                            Con un diseño sorprendente para tus clientes.
                                         </Box>
                                     </Typography>
                                 </Box>

@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "left"
     },
     tipografia:{
-        fontSize: 17,
+        fontSize: 18,
         textAlign: 'center'
     },
     tituloSec:{

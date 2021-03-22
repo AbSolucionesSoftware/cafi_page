@@ -19,7 +19,7 @@ export default function Primera() {
                 <Grid xs={12} >
                     <Typography  component="div" variant="h4" >
                         <Box textAlign="center" mt={1}>
-                            Amazing Features
+                            Asombrosas funciones en un solo click
                         </Box>
                     </Typography>
 
@@ -29,7 +29,7 @@ export default function Primera() {
 
                     <Typography component="div" variant="body1" className={classes.tipografia}>
                         <Box textAlign="center" mt={1}>
-                            List your app features and all the details Lorem ipsum dolor kadr
+                            Una lista de maravillosas funciones para ti como Administrador.
                         </Box>
                     </Typography>
 
@@ -47,10 +47,10 @@ export default function Primera() {
                                 <Box >
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="right" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
+                                            Descargar base de datos
                                         </Box>
                                         <Box textAlign="right" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                            Puedes descargar toda la base de datos de tus clientes esto para garantizar la experiencia de usuario y un excelente servicio postventa.
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -67,10 +67,10 @@ export default function Primera() {
                                 <Box >
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="right" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
+                                            Subir productos mas rapido
                                         </Box>
                                         <Box textAlign="right" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                            Solamente necesitas seleccionar una categoría, Registrar los datos de tu producto y complementar con una galería de fotos. 
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -87,10 +87,10 @@ export default function Primera() {
                                 <Box >
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="right" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
+                                            Ineventarios ONLINE
                                         </Box>
                                         <Box textAlign="right" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                            Ya no tendrás que hacer un conteo de tu mercancía a diario, Con CAFI tu tienda en línea puedes administrar tu inventario online y cargar toda la base de datos de inventarios que tengas. Además, con pocos clics podrás agregar o restar unidades a tu inventario.
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -127,10 +127,10 @@ export default function Primera() {
                                 <Box ml={3}>
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="left" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
+                                            Control de Apartados!
                                         </Box>
                                         <Box textAlign="left" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                            Si, tendrás un panel en el cual podrás gestionar los pedidos de tus clientes a detalle, donde el cliente puede seleccionar si quiere envió a domicilio o lo recoge en sucursal. Adicional a esto puedes actualizar el estado del pedido de tu cliente.
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -147,10 +147,10 @@ export default function Primera() {
                                 <Box ml={3}>
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="left" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
+                                            ¡Administrar tus Pedidos!
                                         </Box>
                                         <Box textAlign="left" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                            En este apartado puedes ver todos los pedidos de tus clientes, filtrar por estados, si ya están pagados o no y cambiar su estado. Toda la gestión de tu tienda a unos clics de distancia.
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -167,10 +167,10 @@ export default function Primera() {
                                 <Box ml={3}>
                                     <Typography component="div" variant="h4" >
                                         <Box textAlign="left" className={classes.subtitulos} mt={2}>
-                                            Todo lo que necesitas saber!
+                                            Podras generar tus propias promociones!
                                         </Box>
                                         <Box textAlign="left" className={classes.tipografia} mt={2}>
-                                            Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+                                            Podras agregar ofertas especiales a tu producto y aparecer en la página principal, así es, con pocos clics puedes agregar descuentos a tus productos sin necesidad de un programador.                                           
                                         </Box>
                                     </Typography>
                                 </Box>
