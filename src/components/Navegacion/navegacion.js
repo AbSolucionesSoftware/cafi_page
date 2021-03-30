@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 //MATERIAL UI
 import { AppBar, Box, Button, Drawer, Hidden, IconButton,List, Toolbar} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,12 +10,13 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 //ICONOS
-// import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-// import ErrorIcon from '@material-ui/icons/Error';
-// import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import ErrorIcon from '@material-ui/icons/Error';
+import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
+import MailIcon from '@material-ui/icons/Mail';
 
 import { deepOrange } from '@material-ui/core/colors';
 
@@ -100,34 +103,42 @@ export default function Navegacion(props) {
 						</Hidden>
 						<Hidden smDown>
 							<div className={classes.grow}/>
-							<Button
-								component={Link}
-								to="/"
-								className={classes.marginButton}
-							>
-								Inicio
-							</Button>
-							{/* <Button
-								component={Link}
-								to="/galeria"
-								className={classes.marginButton}
-							>
-								Galeria
-							</Button>
-							<Button
-								component={Link}
-								to="/"
-								className={classes.marginButton}
-							>
-								Informacion
-							</Button>
-							<Button
-								component={Link}
-								to="/"
-								className={classes.marginButton}
-							>
-								Paquetes
-							</Button> */}
+							<HashLink to="/#inicio" style={{textDecoration: "none" }}>
+								<Button
+									to="/"
+									className={classes.marginButton}
+								>
+									Inicio
+								</Button>
+							</HashLink>
+							<HashLink to="/#galeria" style={{textDecoration: "none" }}>
+								<Button
+									className={classes.marginButton}
+								>
+									Galeria
+								</Button>
+							</HashLink>
+							<HashLink to="/#beneficios" style={{textDecoration: "none" }}>
+								<Button
+									className={classes.marginButton}
+								>
+									Beneficios
+								</Button>
+							</HashLink>
+							<HashLink to="/#paquetes" style={{textDecoration: "none" }}>
+								<Button
+									className={classes.marginButton}
+								>
+									Paquetes
+								</Button>
+							</HashLink>
+							<HashLink to="/#contacto" style={{textDecoration: "none" }}>
+								<Button
+									className={classes.marginButton}
+								>
+									Contacto
+								</Button>
+							</HashLink>
 							{/* {renderMenu} */}
 						</Hidden>
 					</Toolbar>
@@ -150,30 +161,46 @@ export default function Navegacion(props) {
 						<Box>
 							<img className={classes.imagen} alt="no hay imagen" src={imagen} />
 						</Box>
-						<ListItem button component={Link} to="/" onClick={handleDrawerClose}>
-							<ListItemIcon>
-								<HomeIcon />
-							</ListItemIcon>
-							<ListItemText primary="Inicio" />
-						</ListItem>
-						{/* <ListItem button component={Link} to="/galeria" onClick={handleDrawerClose}>
-							<ListItemIcon>
-								<PhotoLibraryIcon />
-							</ListItemIcon>
-							<ListItemText primary="Galeria" />
-						</ListItem>
-						<ListItem button component={Link} to="/" onClick={handleDrawerClose}>
-							<ListItemIcon>
-								<ErrorIcon/>
-							</ListItemIcon>
-							<ListItemText primary="Informacion" />
-						</ListItem>
-						<ListItem button component={Link} to="/" onClick={handleDrawerClose}>
-							<ListItemIcon>
-								<LocalOfferIcon/>
-							</ListItemIcon>
-							<ListItemText primary="Paquetes" />
-						</ListItem> */}
+						<HashLink to="/#inicio" style={{textDecoration: "none" }}>
+							<ListItem button onClick={handleDrawerClose}>
+								<ListItemIcon>
+									<HomeIcon />
+								</ListItemIcon>
+								<ListItemText primary="Inicio" />
+							</ListItem>
+						</HashLink>
+						<HashLink to="/#galeria" style={{textDecoration: "none" }}>
+							<ListItem button  onClick={handleDrawerClose}>
+								<ListItemIcon>
+									<PhotoLibraryIcon />
+								</ListItemIcon>
+								<ListItemText primary="Galeria" />
+							</ListItem>
+						</HashLink>
+						<HashLink to="/#beneficios" style={{textDecoration: "none" }}>
+							<ListItem button onClick={handleDrawerClose}>
+								<ListItemIcon>
+									<ErrorIcon/>
+								</ListItemIcon>
+								<ListItemText primary="Beneficios" />
+							</ListItem>
+						</HashLink>
+						<HashLink to="/#paquetes" style={{textDecoration: "none" }}>
+							<ListItem button onClick={handleDrawerClose}>
+								<ListItemIcon>
+									<LocalOfferIcon/>
+								</ListItemIcon>
+								<ListItemText primary="Paquetes" />
+							</ListItem>
+						</HashLink>
+						<HashLink to="/#contacto" style={{textDecoration: "none" }}>
+							<ListItem button onClick={handleDrawerClose}>
+								<ListItemIcon>
+									<MailIcon/>
+								</ListItemIcon>
+								<ListItemText primary="Contacto" />
+							</ListItem>
+						</HashLink>
 					</List>
 				</Drawer>
 		</div>

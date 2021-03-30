@@ -1,25 +1,25 @@
-import { Box, Divider, Grid, makeStyles, Typography } from '@material-ui/core';
+import { Box, Divider, Grid, IconButton, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 import useStyles from '../estilos';
-import ImagenOne from '../../image/regalo.PNG'
-import ImagenDos from '../../image/regalo2.PNG'
-import ImagenSupport from '../../image/support.PNG'
-
+import LaptopIcon from '@material-ui/icons/Laptop';
+import AddToQueueIcon from '@material-ui/icons/AddToQueue';
+import CloudDoneIcon from '@material-ui/icons/CloudDone';
 
 const stylesLocal = makeStyles((theme) => ({
    containerImagen:{
         width: 180,
         height: '100%',
    },
+   large: {
+    width: theme.spacing(15),
+    height: theme.spacing(15),
+    color: '#673de6',
+  },
 }))
 
-
 export default function Awesome() {
-
+    const local = stylesLocal();
     const classes = useStyles();
-    const estilo = stylesLocal();
-
-
     return (
         <div>
                     <Grid 
@@ -30,16 +30,16 @@ export default function Awesome() {
                         {/* Secciones de titulos */}
                         <Grid xs={10} >
                             <Box pb={5}>
-                                <Typography component="div" variant="h4">
-                                    <Box textAlign="center" mt={5}>
+                                <Typography component="div" color="primary" variant="h3">
+                                    <Box textAlign="center" mt={5} p={1}>
                                         Beneficios incleibles!
                                     </Box>
                                 </Typography>
                                 <Box textAlign="center" mt={1}> 
                                     <Divider className={classes.divisorPrincipal}/>
                                 </Box>
-                                <Typography component="div" variant="body1">
-                                    <Box textAlign="center" mt={3}>
+                                <Typography component="div" variant="h5">
+                                    <Box textAlign="center" p={3}>
                                         Adquiere grandiosos beneficios con nosotros al adquirir tu propia tienda
                                     </Box>
                                 </Typography>
@@ -49,60 +49,59 @@ export default function Awesome() {
                             </Box>
                         </Grid>
                         {/* Secciones de regalos */}
-                        <Grid container justify="center"
-                        alignItems="center">
+                        <Grid container justify="center" alignItems="center">
                             <Grid xs={10} lg={3}>
                                 <Box>
                                     <Box textAlign="center" >
-                                        <img 
-                                            className={estilo.containerImagen}
-                                            src={ImagenOne}
-                                            alt="Regalo" 
-                                        />
+                                        <IconButton>
+                                            <LaptopIcon className={local.large}/>
+                                        </IconButton>
                                     </Box>
-                                    <Typography component="div">
+                                    <Typography component="div" variant="h5" color="primary">
                                         <Box textAlign="center" mt={5} className={classes.tituloSec}>
                                             Tu propio Dominio
                                         </Box>
-                                        <Box textAlign="center" pr={3} pl={3} className={classes.tipografia} mt={2}>
+                                    </Typography>
+                                    <Typography component="div" variant="h6">
+                                        <Box textAlign="center" pr={3} pl={3}  mt={2}>
                                             Adquiere tu propio dominio, que sea tan unico como tu negocio, para que tus clientes te identifiquen mas rapido en la Web.                                            
                                         </Box>
-                                    </Typography>
+                                        </Typography>
                                 </Box>
                             </Grid>
                             <Grid xs={10} lg={3}>
-                            <Box>
+                                <Box>
                                     <Box textAlign="center" >
-                                        <img 
-                                            className={estilo.containerImagen}
-                                            src={ImagenDos}
-                                            alt="Regalo" 
-                                        />
+                                        <IconButton>
+                                            <CloudDoneIcon className={local.large}/>
+                                        </IconButton>
                                     </Box>
-                                    <Typography component="div">
+                                    <Typography component="div" variant="h5" color="primary">
                                         <Box textAlign="center" mt={5} className={classes.tituloSec}>
                                             Almacenamiento
                                         </Box>
-                                        <Box textAlign="center" pr={3} pl={3} className={classes.tipografia} mt={2}>
+                                    </Typography>
+                                    <Typography component="div" variant="h6">
+                                        <Box textAlign="center" pr={3} pl={3}  mt={2}>
                                             No deberas preocuparte por una relacion dentro del almacenamiento y podras registrar los productos que quieras.                                            
                                         </Box>
                                     </Typography>
                                 </Box>
                             </Grid>
                             <Grid xs={10} lg={3}>
-                                <Box>
+                                <Box mt={3}>
                                     <Box textAlign="center" >
-                                        <img 
-                                            className={estilo.containerImagen}
-                                            src={ImagenSupport}
-                                            alt="Regalo" 
-                                        />
+                                        <IconButton>
+                                            <AddToQueueIcon className={local.large}/>
+                                        </IconButton>
                                     </Box>
-                                    <Typography component="div">
+                                    <Typography component="div" variant="h5"  color="primary">
                                         <Box textAlign="center" mt={5} className={classes.tituloSec}>
                                             Variedad de Diseños
                                         </Box>
-                                        <Box textAlign="center" pr={3} pl={3} className={classes.tipografia} mt={2}>
+                                    </Typography>
+                                    <Typography component="div" variant="h6">
+                                        <Box textAlign="center" pr={3} pl={3}  mt={2}>
                                             Al adquirir tu tienda en linea podras elegir entre algunos de nuestros diferentes templates que tenemos para ofrecerte.
                                             Con un diseño sorprendente para tus clientes.
                                         </Box>

@@ -42,17 +42,17 @@ export default function Paquetes() {
             <Container>
                 <Grid container spacing={1} >
                         <Grid lg={12} xs={11}>
-                            <Typography component="div" variant="h4">
+                            <Typography component="div" variant="h3" color="primary">
                                 <Box textAlign="center" mt={5}>
-                                    Affordable Packages
+                                    Paquetes de Nuestra Tienda
                                 </Box>
                             </Typography>
                             <Box textAlign="center" mt={1}> 
                                 <Divider className={classes.divisorPrincipal}/>
                             </Box>
-                            <Typography component="div" variant="body1">
+                            <Typography component="div" variant="h5">
                                 <Box textAlign="center" mt={3}>
-                                    List your app features and all the details Lorem ipsum dolor kadr
+                                    Busca la mejor modalidad que se adapate a tu negocio
                                 </Box>
                             </Typography>
                             <Box textAlign="center" mt={1}> 
@@ -61,98 +61,95 @@ export default function Paquetes() {
                         </Grid>
                         <Grid container>
                             <Grid lg={4} md={4} xs={11}>
-                                <Box mt={7} className={estilo.fondoColor}>
-                                    <Typography className={classes.tituloSec}>
-                                        Personal
+                                <Box mt={7} p={1} textAlign="center" className={estilo.fondoColor}>
+                                    <Typography variant="h3" >
+                                        Basico
                                     </Typography>
                                 </Box>
                                 <Box mt={2}>
                                     <Typography  className={estilo.precio}>
-                                        $50 
+                                        $25,000 Mx.
                                     </Typography>
                                 </Box>
-                                <Box mt={4} className={estilo.fondoColor}>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/> Unlimited Photos
+                                <Box  p={5} mt={4} textAlign="center" alignItems="center" className={estilo.fondoColor}>
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Espacio Ilimitado
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/> Secure Online Transfer
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Editar Informacion
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Unlimited Styles
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Diseño Basico 
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Cloud Storage
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Dominio Gratis
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>24/7 Customer Service
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Soporte Tecnico
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Automatic Backup
-                                    </Typography>
+                                    {/* <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> 
+                                    </Typography> */}
                                 </Box>
                             </Grid>
                             <Grid lg={4} md={4} xs={11}>
-                                <Box mt={7}>
-                                    <Typography  className={classes.tituloSec}>
-                                        Business
+                                <Box mt={7} textAlign="center">
+                                    <Typography color="primary" variant="h3">
+                                        Intermedio
                                     </Typography>
                                 </Box>
-                                <Box mt={3} className={estilo.fondo}>
+                                <Box mt={3} p={2} className={estilo.fondo}>
                                     <Typography className={estilo.blanco}>
-                                        $75
+                                       $35,000 Mx.
                                     </Typography>
                                 </Box>
-                                <Box mt={3}>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/> Unlimited Photos
+                                <Box p={5} textAlign="center" alignItems="center">
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Espacio Ilimitado
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/> Secure Online Transfer
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Editar Informacion
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Unlimited Styles
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Diseño de Frente diferente en productos
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Cloud Storage
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Dominio Gratis
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>24/7 Customer Service
-                                    </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Automatic Backup
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Soporte Tecnico
                                     </Typography>
                                 </Box>
                             </Grid>
                             <Grid lg={4} md={4} xs={11}>
-                                <Box mt={7} className={estilo.fondoColor}> 
-                                    <Typography  className={classes.tituloSec}>
-                                        Ultimate
+                                <Box  mt={7} p={1} textAlign="center" className={estilo.fondoColor}> 
+                                    <Typography color="primary" variant="h3">
+                                        UltimatePlus
                                     </Typography>
                                 </Box>
                                 <Box mt={3}>
                                     <Typography  className={estilo.precio}>
-                                        $99 
+                                        $40,000 Mx.
                                     </Typography>
                                 </Box>
-                                <Box mt={3} mb={7} className={estilo.fondoColor} >
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/> Unlimited Photos
+                                <Box p={1} mt={3}  textAlign="center" alignItems="center" className={estilo.fondoColor} >
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Espacio Ilimitado
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/> Secure Online Transfer
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Editar Informacion
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Unlimited Styles
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Podras editar el diseño de tu página cuando tu quieras 
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Cloud Storage
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Tres formas de publicidad en tu página
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>24/7 Customer Service
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Dominio Gratis
                                     </Typography>
-                                    <Typography  vaiant="body1" className={estilo.tipografia}>
-                                        <DoneIcon className={classes.colorIcon}/>Automatic Backup
+                                    <Typography  vaiant="body1" variant="h6">
+                                        <DoneIcon className={classes.colorIcon}/> Soporte Técnico
                                     </Typography>
                                 </Box>
                             </Grid>

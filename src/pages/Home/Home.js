@@ -11,26 +11,26 @@ import { Box, Container } from '@material-ui/core';
 export default function Home() {
     return (
         <div>
-            <div> 
+            <div id="inicio"> 
                 <BannerPrincipal/>
             </div>
                 <Container>
                     <FrenteScroll/>
                 </Container>
-            <div  style={{background: "white"}}>
+            <div id="beneficios"  style={{background: "white"}}>
                 <Awesome />
             </div>
-            <div>
+            <div id="galeria">
                 <Container>
                     <Carrusel_Screens />
                 </Container>
             </div>
-            <div  style={{background: "white"}}>
+            <div id="paquetes" style={{background: "white"}}>
                 <Box >
                     <Paquetes />
                 </Box>
             </div>
-            <div>
+            <div id="contacto">
                 <Box>
                     <Contacto />
                 </Box>

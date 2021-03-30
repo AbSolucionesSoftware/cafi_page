@@ -3,8 +3,8 @@ import AndroidIcon from '@material-ui/icons/Android';
 import AppleIcon from '@material-ui/icons/Apple';
 import React, {  useState } from 'react';
 import useStyles from '../estilos';
-import ImagenFondo from '../../image/foto.jpg'
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+// import fondo from '../../image/Publicidad CAFI 1.jpg'
 import './contacto.scss'
 // import { StayPrimaryLandscape } from '@material-ui/icons';
 // import { blue } from '@material-ui/core/colors';
@@ -12,7 +12,7 @@ import './contacto.scss'
 const stylesLocal = makeStyles((theme) => ({
     
     containerImagen:{
-        backgroundImage: `url(${ImagenFondo})`,
+        // backgroundImage: `url(${fondo})`,
         backgroundAttachment: 'fixed',
     },
     textF: {
@@ -27,10 +27,13 @@ const stylesLocal = makeStyles((theme) => ({
     },
     tipo:{
         color:"white",
-        fontSize: 45,
+        background: "#673de6",
+        fontWeight: 800,
+        fontSize: 33
     },
     boton: {
-        height: 56
+        height: 'auto',
+        fontSize: 30
     },
     botonCorreo:{
         borderRadius: 100,
@@ -55,14 +58,21 @@ export default function Contacto() {
                     <Grid lg={12} xs={12}>
                         <Box pb={1}>
                             <Box p={1}>
-                                <Typography className={estilo.tipo} component="div" >
-                                    <Box textAlign="center" mt={10}>
-                                        Download the app on
+                                <Typography className={estilo.tipo}  component="div" >
+                                    <Box textAlign="center" mt={15}>
+                                        Descarga nuestra App
+                                    </Box>
+                                </Typography>
+                            </Box>
+                            <Box p={1}>
+                                <Typography className={estilo.tipo}   component="div" >
+                                    <Box textAlign="center" mt={5}>
+                                       Conoce nuestra App, descubre el mundo digital desde tu celular con un solo click.
                                     </Box>
                                 </Typography>
                             </Box>
                                 <Box display="flex" justifyContent="center"  p={5}>
-                                    <Box pr={3}>
+                                    {/* <Box pr={3}>
                                         <Button
                                             variant="contained" 
                                             color="primary"
@@ -73,21 +83,24 @@ export default function Contacto() {
                                         >
                                             App Store
                                         </Button>
-                                    </Box>
-                                    <Box>
-                                        <Button 
-                                            variant="contained" 
-                                            color="primary"
-                                            size="large"
-                                            className={estilo.boton}
-                                            disableRipple
-                                            startIcon={<AndroidIcon />}
-                                        >
-                                            Play Store
-                                        </Button>
+                                    </Box> */}
+                                    <Box mb={10}>
+                                        <a  style={{textDecoration: "none" }} target="_blank" href={`https://play.google.com/store/apps/details?id=com.fractalstudio.cafi`}>
+                                            <Button 
+                                                variant="contained" 
+                                                color="primary"
+                                                size="large"
+                                                className={estilo.boton}
+                                                disableRipple
+                                                startIcon={ <AndroidIcon style={{fontSize: 50}} />}
+                                            >
+                                               
+                                                CafiApp
+                                            </Button>
+                                        </a>
                                     </Box>
                                 </Box>
-                            <Box>
+                            {/* <Box>
                                 <Typography  className={estilo.tipo}  component="div" >
                                     <Box textAlign="center" mt={10}>
                                         Subscribe Now!
@@ -114,14 +127,14 @@ export default function Contacto() {
                                         Suscribirse
                                     </Button>
                                 </Box>
-                            </Box>
+                            </Box> */}
                         </Box>
                     </Grid>
                 </Container>
             </div>
             <div >
                 <Container>
-                    <Box textAlign="center">
+                    {/* <Box textAlign="center">
                         <IconButton 
                             variant="outlined"
                             color="primary"
@@ -136,31 +149,31 @@ export default function Contacto() {
                         >
                             <MailOutlineIcon className={estilo.botonCorreo}/>
                         </IconButton>
-                    </Box>
+                    </Box> */}
                     <Box>
-                        {open === true ? (
+                        {/* {open === true ? (
                             <Box textAlign="center">
                                <form>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField 
                                             className={estilo.textLarge} 
-                                            id="outlined-basic" 
-                                            label="Your name" 
+                                            // id="outlined-basic" 
+                                            label="Nombre de Interesado" 
                                             variant="outlined" 
                                         />
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField 
                                             className={estilo.textLarge} 
-                                            id="outlined-basic" 
-                                            label="Your mail" 
+                                            // id="outlined-basic" 
+                                            label="Cuenta de Correo" 
                                             variant="outlined" 
                                         />
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
                                             className={estilo.textLarge} 
-                                            id="outlined-basic"
+                                            // id="outlined-basic"
                                             label="Subject"
                                             variant="outlined"
                                         />
@@ -168,8 +181,8 @@ export default function Contacto() {
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
                                             className={estilo.textLarge}
-                                            id="outlined-basic"
-                                            label="Message"
+                                            // id="outlined-basic"
+                                            label="Mensaje"
                                             variant="outlined"
                                         />
                                     </Box>
@@ -181,14 +194,14 @@ export default function Contacto() {
                                             className={estilo.boton}
                                             disableRipple
                                         >
-                                            Send Message
+                                            Solicitar Información
                                         </Button>
                                     </Box>
                                </form>
                             </Box>
                         ): (
                             null
-                        )}
+                        )} */}
                     </Box>
                 </Container>
             </div>

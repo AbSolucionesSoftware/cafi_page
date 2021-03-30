@@ -1,11 +1,31 @@
 import React, { useEffect,  useState } from 'react'; //
 import { Route, Switch } from 'react-router-dom';
+import { AppBar, CssBaseline, Slide, Toolbar, useScrollTrigger } from '@material-ui/core';
 import Navegacion from '../Navegacion/navegacion';
-// import { ThemeProvider } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 // import theme from '../../config/themeConfig';
 // import darkMode from '../../config/darkMode';
 // import { CssBaseline } from '@material-ui/core';
 import Footer from '../Footer/footer';
+
+function HideOnScroll(props) {
+	const { children, window } = props;
+	const trigger = useScrollTrigger({ target: window ? window() : undefined });
+  
+	return (
+	  <Slide appear={false} direction="down" in={!trigger}>
+		{children}
+	  </Slide>
+	);
+}
+
+HideOnScroll.propTypes = {
+	children: PropTypes.element.isRequired,
+	window: PropTypes.func,
+};
+
 
 export default function LayoutUsers(props) {
 	let thema = localStorage.getItem('tema');
@@ -21,9 +41,17 @@ export default function LayoutUsers(props) {
 	}, [tema]);
 
 	return (
+		<ThemeProvider >
+			<CssBaseline />
 			<div>
 				<div style={{minHeight: '8vh'}}>
-					<Navegacion />
+					<HideOnScroll {...props}>
+						<AppBar>
+							<Toolbar>
+								<Navegacion />
+							</Toolbar>
+						</AppBar>
+					</HideOnScroll>
 				</div>
 				<div style={{minHeight: '90vh'}}>
 					<LoadRoutes routes={routes} />
@@ -32,6 +60,7 @@ export default function LayoutUsers(props) {
 					<Footer />
 				</div>
 			</div>
+		</ThemeProvider>
 	);
 }
 

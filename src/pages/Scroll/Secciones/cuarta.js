@@ -4,7 +4,8 @@ import React, { Fragment } from 'react'
 import useStyles from '../../estilos';
 
 
-export default function Cuarta() {
+export default function Cuarta() 
+ {
 
     const classes = useStyles();
 
@@ -16,7 +17,7 @@ export default function Cuarta() {
                         <Box className={classes.cajaVideo} mt={3}>
                             <iframe 
                                 className={classes.video}
-                                src="https://www.youtube.com/embed/Ooj0369RNE0" 
+                                src="https://www.youtube.com/embed/oeiiCCTrCB8" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen
@@ -27,9 +28,9 @@ export default function Cuarta() {
                     </Grid>
                     <Grid lg={6} xs={10}>
                         <Box ml={5}>
-                        <Typography component="div" variant="h4">
+                        <Typography component="div" variant="h3" color="primary">
                             <Box textAlign="left" mt={6}>
-                                Description with video
+                                Somos CAFI tu aliado del mundo digital. 
                             </Box>
                         </Typography>
                         </Box>
@@ -37,12 +38,9 @@ export default function Cuarta() {
                             <Divider variant="inset" className={classes.divisor}/>
                         </Box>
                         <Box ml={5}>
-                        <Typography component="div" variant="body1" className={classes.tipografia}>
+                        <Typography component="div" variant="h6">
                             <Box  className={classes.margenes}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </Box>
-                            <Box  className={classes.margenes}>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                                No importa la industria en la que estés, adentrarte en el mundo digital te abre muchas oportunidades, reinventando los negocios y capturando ventajas competitivas únicas. Entra en el mundo digital y acércate a tus clientes de una manera diferente. Potencia tus ventas y logra mayor alcance de público con el poder del e-commerce.                 
                             </Box>
                         </Typography>
                         </Box>

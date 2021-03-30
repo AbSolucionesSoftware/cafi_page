@@ -2,43 +2,41 @@ import {  makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     containerImage:{
-        width: "80%",
+        width: "90%",
         height: '100%'
     },
     containerImgSec:{
         width: "80%",
         height: '100%'
     },
-    
     imagen:{
-        width: '100%',
-        height: '100%'
+        maxHeight: '100%',
+		maxWidth: '100%'
     },
     
     margenes:{
         marginTop: "6%",
         textAlign: "left"
     },
-    tipografia:{
-        fontSize: 18,
-        textAlign: 'center'
-    },
+    // tipografia:{
+    //     fontSize: 18,
+    // },
     tituloSec:{
-        fontSize: 24,
-        color: '#673de6',
+        // fontSize: 28,
+        // color: '#673de6',
         textAlign:'center'
     },
     subtitulos:{
-        fontSize: 20,
-        color: '#673de6',
+        // fontSize: 24,
+        // color: '#673de6',
     },
 
     colorIcon:{
-        fontSize: 25,
+        fontSize: 30,
         color: '#673de6'
     },
     iconBoton:{
-        fontSize: 60,
+        fontSize: 65,
         color: '#673de6'
     },
 

@@ -1,31 +1,41 @@
-import { Box, Container, Divider, Grid, Hidden, Typography } from '@material-ui/core';
+import { Box, Container, Divider, Grid, Hidden, makeStyles, Typography } from '@material-ui/core';
 import React, { Fragment } from 'react'
 import DoneAllIcon from '@material-ui/icons/DoneAll';
 
-import ImagenOne from '../../../image/CelularOne.png'
+import Celular from '../../../image/Publicidad CAFI 3.1.jpg'
 import useStyles from '../../estilos';
 
+const styleslocales = makeStyles((theme) => ({
+    containerImage:{
+        width: "90%",
+        height: "90%"
+    },
+    imagen:{
+        maxHeight: '100%',
+		maxWidth: '100%'
+    },
+}));
 
 export default function Tercera() {
-
+    const local = styleslocales();
     const classes = useStyles();
 
     return (
         <Fragment>
             <Container>
-                <Grid container spacing={1} >
-                    <Grid lg={6} xs={12} >
-                        <Box className={classes.containerImage}>
+                <Grid container>
+                    <Grid lg={7} xs={12} >
+                        <Box display="flex" justifyContent="center" alignItems="center" className={local.containerImage}>
                             <img 
-                                className={classes.imagen}
-                                src={ImagenOne}
-                                alt="Tecnologia de Huawei" 
+                                className={local.imagen}
+                                src={Celular}
+                                alt="Celular Promocional" 
                             />
                         </Box>
                     </Grid>
-                    <Grid lg={6} xs={11}>
-                        <Typography component="div" variant="h4">
-                            <Box textAlign="left" mt={9}>
+                    <Grid lg={5} xs={11}>
+                        <Typography component="div" variant="h3" color="primary">
+                            <Box textAlign="left">
                                 ¡Todo lo que obtienes con CAFI!
                             </Box>
                         </Typography>
@@ -34,12 +44,12 @@ export default function Tercera() {
                         <Divider variant="inset" className={classes.divisor}/>
                         
                         </Box>
-                        <Typography component="div" variant="body1" className={classes.tipografia}>
+                        <Typography component="div" variant="h6">
                             <Box className={classes.margenes}>
-                                Tú, como dueño de tu tienda en línea tendrás acceso a un panel de administrador donde estarán todos los apartados y secciones de tu tienda 100% editables para que le des el diseño y estructura que siempre habías soñado.
+                                Tú, como dueño de tu tienda en línea tendrás acceso a tu panel de administrador donde estarán todos los apartados y secciones de tu tienda 100% editables para que des el diseño y estructura que siempre habías soñado.
                             </Box>
                             <Box display="flex" alignItems="center" className={classes.margenes}>
-                                <Box p={1}>
+                                <Box display="flex" alignItems="center" p={1}>
                                     <DoneAllIcon className={classes.colorIcon} />
                                 </Box>
                                 <Box>
@@ -47,35 +57,35 @@ export default function Tercera() {
                                 </Box>
                             </Box>
                             <Box display="flex" alignItems="center" className={classes.margenes}>
-                                <Box p={1}>
+                                <Box  display="flex" alignItems="center" p={1}>
                                     <DoneAllIcon className={classes.colorIcon} />
                                 </Box>
                                 <Box>
-                                    Configurar cuales serán tus políticas de envió, políticas de privacidad y de imagen corporativa
+                                    Configurar tus políticas de envió, privacidad y de imagen corporativa
                                 </Box>
                             </Box>
                             <Box display="flex" alignItems="center" className={classes.margenes}>
-                                <Box p={1}>
+                                <Box  display="flex" alignItems="center" p={1}>
                                     <DoneAllIcon className={classes.colorIcon} />
                                 </Box>
                                 <Box>
-                                    Un apartado exclusivo donde puedes subir una historia de tu empresa.
+                                    Un apartado exclusivo donde puedes subir la historia de tu empresa.
                                 </Box> 
                             </Box>
                             <Box display="flex" alignItems="center" className={classes.margenes}>
-                                <Box p={1}>
+                                <Box  display="flex" alignItems="center" p={1}>
                                     <DoneAllIcon className={classes.colorIcon} />
                                 </Box>
                                 <Box>
-                                    Podras editar el logo de tu negocio, datos principales de contacto, ubicación
+                                    Podras editar el logo de tu negocio, datos principales de contacto, ubicación y todas tus redes sociales.
                                 </Box>
                             </Box>
                             <Box display="flex" alignItems="center" className={classes.margenes}>
-                                <Box p={1}>
+                                <Box  display="flex" alignItems="center" p={1}>
                                     <DoneAllIcon className={classes.colorIcon} />
                                 </Box>
                                 <Box>
-                                    Tienes un apartado de publicidad donde en este apartado puedes subir una sección completa con un banner y los productos de una categoría en especial en la página principal.
+                                    Tu propio apartado de publicidad donde en este podras subir una sección completa con un banner y los productos de una categoría en especial en la página principal.
                                 </Box>
                             </Box>
                         </Typography>

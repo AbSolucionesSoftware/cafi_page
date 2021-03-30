@@ -1,8 +1,17 @@
 import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import imagen1 from '../../image/screen.jpg'
-import imagen2 from '../../image/screen 2.jpg'
+import cap1 from '../../image/Screens/cap1.jpg'
+import cap2 from '../../image/Screens/cap2.jpg'
+import cap3 from '../../image/Screens/cap3.jpg'
+import cap4 from '../../image/Screens/cap4.jpg'
+import cap5 from '../../image/Screens/cap5.jpg'
+import cap6 from '../../image/Screens/cap6.jpg'
+import cap7 from '../../image/Screens/cap7.jpg'
+import cap8 from '../../image/Screens/cap8.jpg'
+import cap9 from '../../image/Screens/cap9.jpg'
+import cap10 from '../../image/Screens/cap10.jpg'
+
 import { Box, Divider, Grid, makeStyles, Typography } from '@material-ui/core';
 import useStyles from '../estilos';
 
@@ -52,17 +61,17 @@ export default function Carrusel_Screens() {
     return (
     <div>
         <Grid xs={12}>
-            <Typography component="div" variant="h4">
-                <Box textAlign="center" mt={8}>
-                    Screenshots
+            <Typography component="div" variant="h3" color="primary">
+                <Box textAlign="center" mt={8} p={1}>
+                    Una perpectiva diferente
                 </Box>
             </Typography>
             <Box textAlign="center" mt={1}> 
                 <Divider className={classes.divisorPrincipal}/>
             </Box>
-            <Typography component="div" variant="body1">
-                <Box textAlign="center" mt={3}>
-                    List your app features and all the details Lorem ipsum dolor kadr
+            <Typography component="div" variant='h6'>
+                <Box textAlign="center" p={3}>
+                    Preparate y entra en el nuevo mundo del E-Comerce
                 </Box>
             </Typography>
             <Box textAlign="center" mt={1}> 
@@ -84,7 +93,7 @@ export default function Carrusel_Screens() {
                     <Box className={estilos.containerImagen}>
                         <img
                             className={estilos.imagen}
-                            src={imagen2}
+                            src={cap1}
                             alt="imagen"
                         />
                         
@@ -93,14 +102,14 @@ export default function Carrusel_Screens() {
                         <img
                             alt="imagen"
                             className={estilos.imagen}
-                            src={imagen1}
+                            src={cap2}
                         />
                         
                     </Box>
                     <Box className={estilos.containerImagen}>
                         <img
                             className={estilos.imagen}
-                            src={imagen2}
+                            src={cap3}
                             alt="imagen"
                         />
                         
@@ -108,7 +117,7 @@ export default function Carrusel_Screens() {
                     <Box className={estilos.containerImagen}>
                         <img
                             className={estilos.imagen}
-                            src={imagen1}
+                            src={cap4}
                             alt="imagen"
                         />
                         
@@ -116,7 +125,7 @@ export default function Carrusel_Screens() {
                     <Box className={estilos.containerImagen}>
                         <img
                             className={estilos.imagen}
-                            src={imagen2}
+                            src={cap5}
                             alt="imagen"
                         />
                         
@@ -124,7 +133,7 @@ export default function Carrusel_Screens() {
                     <Box className={estilos.containerImagen}>
                         <img
                             className={estilos.imagen}
-                            src={imagen1}
+                            src={cap6}
                             alt="imagen"
                         />
                         
@@ -132,7 +141,7 @@ export default function Carrusel_Screens() {
                     <Box className={estilos.containerImagen}>
                         <img
                             className={estilos.imagen}
-                            src={imagen2}
+                            src={cap7}
                             alt="imagen"
                         />
                         
@@ -140,7 +149,23 @@ export default function Carrusel_Screens() {
                     <Box className={estilos.containerImagen}>
                         <img
                             className={estilos.imagen}
-                            src={imagen1}
+                            src={cap8}
+                            alt="imagen"
+                        />
+                        
+                    </Box>
+                    <Box className={estilos.containerImagen}>
+                        <img
+                            className={estilos.imagen}
+                            src={cap9}
+                            alt="imagen"
+                        />
+                        
+                    </Box>
+                    <Box className={estilos.containerImagen}>
+                        <img
+                            className={estilos.imagen}
+                            src={cap10}
                             alt="imagen"
                         />
                         

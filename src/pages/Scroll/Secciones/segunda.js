@@ -1,30 +1,41 @@
-import { Box, Container, Divider, Grid, Hidden, Typography } from '@material-ui/core';
+import { Box, Container, Divider, Grid, Hidden, makeStyles, Typography } from '@material-ui/core';
 import React, { Fragment } from 'react'
 
-import ImagenOne from '../../../image/CelularOne.png'
+import ImagenOne from '../../../image/PUBLICIDAD PARA CAFI 6.1.jpg'
 import useStyles from '../../estilos';
 
+const styleslocales = makeStyles((theme) => ({
+    containerImage:{
+        width: "80%",
+        height: "100%"
+    },
+    imagen:{
+        maxHeight: '100%',
+		maxWidth: '100%'
+    },
+    fondo:{
+        // background: "#ebebeb"
+    }
+}));
 
 export default function Primera() {
-
+    
+    const local = styleslocales();
     const classes = useStyles();
 
     return (
-        <Fragment>
-            <Container>
+            <Container className={local.fondo}>
                 <Grid container spacing={1} >
-                    <Grid lg={6} xs={11}>
-                        <Typography component="div" variant="h4">
-                            <Box textAlign="left" mt={9}>
+                    <Grid lg={5} xs={11}>
+                        <Typography component="div"  variant="h3" color="primary">
+                            <Box mt={9} textAlign="left" >
                                 CAFI tu tienda en línea, en una APP MOVIL 
                             </Box>
                         </Typography>
                         <Box className={classes.margenes}>
-
                             <Divider variant="inset" className={classes.divisor}/>
-                        
                         </Box>
-                        <Typography component="div" className={classes.tipografia}>
+                        <Typography component="div" variant="h6">
                             <Box  className={classes.margenes}>
                                 Al adquirir nuestros servicios tendras la posibilidad de poder obtener tu propia App Movil.
                             </Box>
@@ -36,10 +47,10 @@ export default function Primera() {
                             </Box>
                         </Typography>
                     </Grid>
-                    <Grid lg={6} xs={11} >
-                        <Box ml={7} className={classes.containerImage}>
+                    <Grid lg={7} xs={11} >
+                        <Box mt={3} ml={4} display="flex" justifyContent="center" alignItems="center" className={local.containerImage}>
                             <img 
-                                className={classes.imagen}
+                                className={local.imagen}
                                 src={ImagenOne}
                                 alt="Tecnologia de Huawei" 
                             />
@@ -47,6 +58,5 @@ export default function Primera() {
                     </Grid>
                 </Grid>
             </Container>
-        </Fragment>
     )
 }
