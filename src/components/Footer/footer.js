@@ -28,7 +28,7 @@ export default function Footer() {
                </Box>
                <Box align="center">
                    <Typography>
-                       Telefono: 3173873462
+                       Telefono: 317-103-5768
                    </Typography>
                    <Typography >
                        Javier Mina #452, Coto privado Javier Mina, CP 48900

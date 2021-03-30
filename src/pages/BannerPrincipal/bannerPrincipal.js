@@ -45,7 +45,7 @@ export default function BannerPrincipal() {
     return (
         <>
             <BannerAnim autoPlay prefixCls="banner-user" delay={200}>
-                <Element key={1} prefixCls="banner-user-elem" >
+                {/* <Element key={1} prefixCls="banner-user-elem" >
                     <BgElement
                         key="bg"
                         className="bg banner-elemento"
@@ -55,7 +55,7 @@ export default function BannerPrincipal() {
                         }}
                     >
                     </BgElement>
-                </Element>
+                </Element> */}
                 <Element key="2" prefixCls="banner-user-elem" >
                     <BgElement
                         key="bg"

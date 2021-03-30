@@ -33,7 +33,7 @@ export default function Primera() {
 
                     <Typography component="div" variant="h5" color="primary" >
                         <Box textAlign="center" mt={1}>
-                            Una lista de maravillosas funciones para ti como dueno de tu propia tienda
+                            Una lista de maravillosas funciones para ti como dueño de tu propia tienda
                         </Box>
                     </Typography>
 
