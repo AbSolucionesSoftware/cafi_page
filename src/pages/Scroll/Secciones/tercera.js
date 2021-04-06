@@ -85,7 +85,7 @@ export default function Tercera() {
                                     <DoneAllIcon className={classes.colorIcon} />
                                 </Box>
                                 <Box>
-                                    Tu propio apartado de publicidad donde en este podras subir una sección completa con un banner y los productos de una categoría en especial en la página principal.
+                                    Tu propio apartado de publicidad donde en este podrás subir una sección completa con un banner y los productos de una categoría en especial en la página principal.
                                 </Box>
                             </Box>
                         </Typography>

@@ -71,7 +71,7 @@ export default function Carrusel_Screens() {
             </Box>
             <Typography component="div" variant='h6'>
                 <Box textAlign="center" p={3}>
-                    Preparate y entra en el nuevo mundo del E-Comerce
+                    Prepárate y entra en el nuevo mundo del E-Comerce
                 </Box>
             </Typography>
             <Box textAlign="center" mt={1}> 

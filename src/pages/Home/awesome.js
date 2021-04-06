@@ -32,7 +32,7 @@ export default function Awesome() {
                             <Box pb={5}>
                                 <Typography component="div" color="primary" variant="h3">
                                     <Box textAlign="center" mt={5} p={1}>
-                                        Beneficios incleibles!
+                                        ¡Beneficios increíbles!
                                     </Box>
                                 </Typography>
                                 <Box textAlign="center" mt={1}> 
@@ -64,7 +64,7 @@ export default function Awesome() {
                                     </Typography>
                                     <Typography component="div" variant="h6">
                                         <Box textAlign="center" pr={3} pl={3}  mt={2}>
-                                            Adquiere tu propio dominio, que sea tan unico como tu negocio, para que tus clientes te identifiquen mas rapido en la Web.                                            
+                                            Adquiere tu propio dominio, que sea tan único como tu negocio, para que tus clientes te identifiquen más rápido en la Web.
                                         </Box>
                                         </Typography>
                                 </Box>
@@ -83,7 +83,7 @@ export default function Awesome() {
                                     </Typography>
                                     <Typography component="div" variant="h6">
                                         <Box textAlign="center" pr={3} pl={3}  mt={2}>
-                                            No deberas preocuparte por una relacion dentro del almacenamiento y podras registrar los productos que quieras.                                            
+                                            No deberás preocuparte por una relación dentro del almacenamiento y podrás registrar los productos que quieras.
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -102,8 +102,7 @@ export default function Awesome() {
                                     </Typography>
                                     <Typography component="div" variant="h6">
                                         <Box textAlign="center" pr={3} pl={3}  mt={2}>
-                                            Al adquirir tu tienda en linea podras elegir entre algunos de nuestros diferentes templates que tenemos para ofrecerte.
-                                            Con un diseño sorprendente para tus clientes.
+                                            Al adquirir tu tienda en linea podrás elegir entre algunos de nuestros diferentes templetes que tenemos para ofrecerte. Con un diseño sorprendente para tus clientes.
                                         </Box>
                                     </Typography>
                                 </Box>

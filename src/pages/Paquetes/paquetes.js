@@ -63,7 +63,7 @@ export default function Paquetes() {
                             <Grid lg={4} md={4} xs={11}>
                                 <Box mt={7} p={1} textAlign="center" className={estilo.fondoColor}>
                                     <Typography variant="h3" >
-                                        Basico
+                                        Básico
                                     </Typography>
                                 </Box>
                                 <Box mt={2}>
@@ -73,19 +73,19 @@ export default function Paquetes() {
                                 </Box>
                                 <Box  p={5} mt={4} textAlign="center" alignItems="center" className={estilo.fondoColor}>
                                     <Typography  vaiant="body1" variant="h6">
-                                        <DoneIcon className={classes.colorIcon}/> Espacio Ilimitado
+                                        <DoneIcon className={classes.colorIcon}/> Espacio ilimitado
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
-                                        <DoneIcon className={classes.colorIcon}/> Editar Informacion
+                                        <DoneIcon className={classes.colorIcon}/> Editar información
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
-                                        <DoneIcon className={classes.colorIcon}/> Diseño Basico 
+                                        <DoneIcon className={classes.colorIcon}/> Diseño básico 
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
                                         <DoneIcon className={classes.colorIcon}/> Dominio Gratis
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
-                                        <DoneIcon className={classes.colorIcon}/> Soporte Tecnico
+                                        <DoneIcon className={classes.colorIcon}/> Soporte técnico
                                     </Typography>
                                     {/* <Typography  vaiant="body1" variant="h6">
                                         <DoneIcon className={classes.colorIcon}/> 
@@ -108,7 +108,7 @@ export default function Paquetes() {
                                         <DoneIcon className={classes.colorIcon}/> Espacio Ilimitado
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
-                                        <DoneIcon className={classes.colorIcon}/> Editar Informacion
+                                        <DoneIcon className={classes.colorIcon}/> Editar información
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
                                         <DoneIcon className={classes.colorIcon}/> Diseño de Frente diferente en productos
@@ -117,14 +117,14 @@ export default function Paquetes() {
                                         <DoneIcon className={classes.colorIcon}/> Dominio Gratis
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
-                                        <DoneIcon className={classes.colorIcon}/> Soporte Tecnico
+                                        <DoneIcon className={classes.colorIcon}/> Soporte técnico
                                     </Typography>
                                 </Box>
                             </Grid>
                             <Grid lg={4} md={4} xs={11}>
                                 <Box  mt={7} p={1} textAlign="center" className={estilo.fondoColor}> 
                                     <Typography color="primary" variant="h3">
-                                        UltimatePlus
+                                        Ultimate Plus
                                     </Typography>
                                 </Box>
                                 <Box mt={3}>
@@ -137,7 +137,7 @@ export default function Paquetes() {
                                         <DoneIcon className={classes.colorIcon}/> Espacio Ilimitado
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
-                                        <DoneIcon className={classes.colorIcon}/> Editar Informacion
+                                        <DoneIcon className={classes.colorIcon}/> Editar información
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
                                         <DoneIcon className={classes.colorIcon}/> Podras editar el diseño de tu página cuando tu quieras 
@@ -149,7 +149,7 @@ export default function Paquetes() {
                                         <DoneIcon className={classes.colorIcon}/> Dominio Gratis
                                     </Typography>
                                     <Typography  vaiant="body1" variant="h6">
-                                        <DoneIcon className={classes.colorIcon}/> Soporte Técnico
+                                        <DoneIcon className={classes.colorIcon}/> Soporte técnico
                                     </Typography>
                                 </Box>
                             </Grid>

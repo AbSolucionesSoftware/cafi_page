@@ -40,7 +40,7 @@ export default function Cuarta()
                         <Box ml={5}>
                         <Typography component="div" variant="h6">
                             <Box  className={classes.margenes}>
-                                No importa la industria en la que estés, adentrarte en el mundo digital te abre muchas oportunidades, reinventando los negocios y capturando ventajas competitivas únicas. Entra en el mundo digital y acércate a tus clientes de una manera diferente. Potencia tus ventas y logra mayor alcance de público con el poder del e-commerce.                 
+                                No importa la industria en la que estés, adentrarte en el mundo digital te abre muchas oportunidades, reinventando los negocios y capturando ventajas competitivas únicas. Entra en el mundo digital y acércate a tus clientes de una manera diferente. Potencia tus ventas y logra mayor alcance de público con el poder del e-commerce.
                             </Box>
                         </Typography>
                         </Box>

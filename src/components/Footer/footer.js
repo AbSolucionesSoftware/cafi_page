@@ -31,10 +31,10 @@ export default function Footer() {
                        Telefono: 317-103-5768
                    </Typography>
                    <Typography >
-                       Javier Mina #452, Coto privado Javier Mina, CP 48900
+                        Javier Mina #452, Coto privado Javier Mina, CP 48900
                    </Typography>
                    <Typography>
-                       Autlan de Navarro, Jalisco, 
+                       Autlán de Navarro, Jalisco.
                    </Typography>
                </Box>
                <Box align="center">

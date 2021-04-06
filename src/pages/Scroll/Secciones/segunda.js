@@ -37,13 +37,13 @@ export default function Primera() {
                         </Box>
                         <Typography component="div" variant="h6">
                             <Box  className={classes.margenes}>
-                                Al adquirir nuestros servicios tendras la posibilidad de poder obtener tu propia App Movil.
+                                Al adquirir nuestros servicios tendrás la posibilidad de poder obtener tu propia App móvil.
                             </Box>
                             <Box  className={classes.margenes}>
-                                Una mayor experiencia para tus usuarios. Podran encontrarte mas rapido desde la PlayStore, para poder consultar mas rapido tus productos
+                                Una mayor experiencia para tus usuarios. podrán encontrarte más rápido desde la PlayStore, para poder consultar más rápido tus productos
                             </Box>
                             <Box  className={classes.margenes}>
-                                Mismos productos, misma publicidad, mismas promociones, todo desde tu propia aplicación. Estar a la vanguardia del mercado digital nunca fue tan facil.
+                                Mismos productos, misma publicidad, mismas promociones, todo desde tu propia aplicación. Estar a la vanguardia del mercado digital nunca fue tan fácil.
                             </Box>
                         </Typography>
                     </Grid>

@@ -23,7 +23,7 @@ export default function Primera() {
                 <Grid xs={12} >
                     <Typography  component="div" variant="h3" color="primary" >
                         <Box textAlign="center" mt={1}>
-                            Asombrosas funciones en un solo click
+                            Asombrosas funciones en un solo clic
                         </Box>
                     </Typography>
 
@@ -73,7 +73,7 @@ export default function Primera() {
                                 <Box >
                                     <Typography component="div" variant="h5" color="primary" >
                                         <Box textAlign="right" mt={2}>
-                                            Subir productos mas rapido
+                                            Subir productos más rapido
                                         </Box>
                                         </Typography>
                                         <Typography component="div" variant="h6">
@@ -142,7 +142,7 @@ export default function Primera() {
                                         </Typography>
                                         <Typography component="div" variant="h6">
                                         <Box textAlign="left" mt={2}>
-                                            Si, tendrás un panel en el cual podrás gestionar los pedidos de tus clientes, donde el cliente podra elegir si quiere envió a domicilio o lo recoge en sucursal. Podras actualizar el estado del pedido de tu cliente.
+                                            Si, tendrás un panel en el cual podrás gestionar los pedidos de tus clientes, donde el cliente podrá elegir si quiere envió a domicilio o lo recoge en sucursal. podrás actualizar el estado del pedido de tu cliente.
                                         </Box>
                                     </Typography>
                                 </Box>
@@ -186,7 +186,7 @@ export default function Primera() {
                                         </Typography>
                                         <Typography component="div" variant="h6">
                                         <Box textAlign="left" mt={2}>
-                                            Podras generar ofertas especiales a tus productos, así es, con pocos clics puedes agregar descuentos a tus productos.                                        
+                                            Podrás generar ofertas especiales a tus productos, así es, con pocos clics puedes agregar descuentos a tus productos.
                                         </Box>
                                     </Typography>
                                 </Box>
