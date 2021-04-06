@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.65d82f4a.chunk.css",
+    "main.js": "/static/js/main.8f872b07.chunk.js",
+    "main.js.map": "/static/js/main.8f872b07.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4659189a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4659189a.js.map",
+    "static/css/2.c1425fdb.chunk.css": "/static/css/2.c1425fdb.chunk.css",
+    "static/js/2.d8ea15e4.chunk.js": "/static/js/2.d8ea15e4.chunk.js",
+    "static/js/2.d8ea15e4.chunk.js.map": "/static/js/2.d8ea15e4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.c1425fdb.chunk.css.map": "/static/css/2.c1425fdb.chunk.css.map",
+    "static/css/main.65d82f4a.chunk.css.map": "/static/css/main.65d82f4a.chunk.css.map",
+    "static/js/2.d8ea15e4.chunk.js.LICENSE.txt": "/static/js/2.d8ea15e4.chunk.js.LICENSE.txt",
+    "static/media/CarruselDos.a41b5f56.jpg": "/static/media/CarruselDos.a41b5f56.jpg",
+    "static/media/CarruselTres.0e3850c5.jpg": "/static/media/CarruselTres.0e3850c5.jpg",
+    "static/media/CarruselUno.da727e81.jpg": "/static/media/CarruselUno.da727e81.jpg",
+    "static/media/ImagenFondo.6c209908.jpeg": "/static/media/ImagenFondo.6c209908.jpeg",
+    "static/media/Logo Cafi.377ab443.png": "/static/media/Logo Cafi.377ab443.png",
+    "static/media/PUBLICIDAD PARA CAFI 6.1.7b78a8d9.jpg": "/static/media/PUBLICIDAD PARA CAFI 6.1.7b78a8d9.jpg",
+    "static/media/Publicidad CAFI 2.1.63cc5754.jpg": "/static/media/Publicidad CAFI 2.1.63cc5754.jpg",
+    "static/media/Publicidad CAFI 3.1.1d0de934.jpg": "/static/media/Publicidad CAFI 3.1.1d0de934.jpg",
+    "static/media/cap1.fe1e8caf.jpg": "/static/media/cap1.fe1e8caf.jpg",
+    "static/media/cap10.0c549528.jpg": "/static/media/cap10.0c549528.jpg",
+    "static/media/cap2.f8432c25.jpg": "/static/media/cap2.f8432c25.jpg",
+    "static/media/cap3.5042e798.jpg": "/static/media/cap3.5042e798.jpg",
+    "static/media/cap4.2b2a9064.jpg": "/static/media/cap4.2b2a9064.jpg",
+    "static/media/cap5.a7931b16.jpg": "/static/media/cap5.a7931b16.jpg",
+    "static/media/cap6.5305cdfa.jpg": "/static/media/cap6.5305cdfa.jpg",
+    "static/media/cap7.4af97e58.jpg": "/static/media/cap7.4af97e58.jpg",
+    "static/media/cap8.083ac705.jpg": "/static/media/cap8.083ac705.jpg",
+    "static/media/cap9.6d6779fd.jpg": "/static/media/cap9.6d6779fd.jpg",
+    "static/media/styles.css": "/static/media/revicons.e8746a62.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4659189a.js",
+    "static/css/2.c1425fdb.chunk.css",
+    "static/js/2.d8ea15e4.chunk.js",
+    "static/css/main.65d82f4a.chunk.css",
+    "static/js/main.8f872b07.chunk.js"
+  ]
+}
