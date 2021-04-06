@@ -181,7 +181,7 @@ export default function Primera() {
                                 <Box ml={3}>
                                     <Typography component="div" variant="h5" color="primary" >
                                         <Box textAlign="left" mt={2}>
-                                            Podras generar tus propias promociones!
+                                            Podras generar tus propias promociones
                                         </Box>
                                         </Typography>
                                         <Typography component="div" variant="h6">
