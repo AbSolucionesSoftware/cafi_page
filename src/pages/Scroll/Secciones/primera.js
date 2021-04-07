@@ -1,5 +1,5 @@
 import { Box, Container, Divider, Grid, Typography } from '@material-ui/core';
-import React, { Fragment } from 'react'
+import React from 'react'
 import { IconButton } from '@material-ui/core';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import LocalAtmIcon from '@material-ui/icons/LocalAtm';
@@ -8,7 +8,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 
-import Celular from '../../../image/Publicidad CAFI 2.1.jpg'
+import Celular from '../../../image/Publicidad CAFI 2.png'
 import useStyles from '../../estilos';
 
 
@@ -27,7 +27,7 @@ export default function Primera() {
                         </Box>
                     </Typography>
 
-                    <Box mt={2}>
+                    <Box mt={2} display="flex" justifyContent="center" alignItems="center">
                         <Divider className={classes.divisorPrincipal}/>
                     </Box>
 
@@ -37,7 +37,7 @@ export default function Primera() {
                         </Box>
                     </Typography>
 
-                    <Box mt={2} mb={5}>
+                    <Box mt={2} mb={5} display="flex" justifyContent="center" alignItems="center">
                         <Divider className={classes.divisorPrincipal}/>
                     </Box>
 

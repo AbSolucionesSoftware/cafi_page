@@ -17,15 +17,13 @@ export default function Home() {
                 <Container>
                     <FrenteScroll/>
                 </Container>
-            <div id="beneficios"  style={{background: "white"}}>
+            <div id="beneficios"  >
                 <Awesome />
             </div>
             <div id="galeria">
-                <Container>
-                    <Carrusel_Screens />
-                </Container>
+                <Carrusel_Screens />
             </div>
-            <div id="paquetes" style={{background: "white"}}>
+            <div id="paquetes">
                 <Box >
                     <Paquetes />
                 </Box>

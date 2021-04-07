@@ -14,7 +14,8 @@ import './scss/styles.scss';
 const theme = createMuiTheme({
   typography: {
     h6:{ //testo
-      fontSize: 18
+      fontSize: 18,
+      fontWeight: 600
     },
     h5:{ //subtitulos
       fontSize: 20
@@ -23,7 +24,7 @@ const theme = createMuiTheme({
     //   fontSize: 27,
     // },
     h3:{ //nombre empresa
-      fontSize: 28,
+      fontSize: 30,
       fontWeight: 500
     },
     body1:{

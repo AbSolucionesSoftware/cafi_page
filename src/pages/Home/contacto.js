@@ -1,19 +1,23 @@
-import { Box, Button, Container, Grid, Hidden, IconButton, makeStyles, TextField, Typography } from '@material-ui/core';
+import { Box, Button, Container, Grid, Hidden,  makeStyles, Typography} from '@material-ui/core';
 import AndroidIcon from '@material-ui/icons/Android';
-import AppleIcon from '@material-ui/icons/Apple';
-import React, {  useState } from 'react';
-import useStyles from '../estilos';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import fondo from '../../image/ImagenFondo.jpeg'
+// import AppleIcon from '@material-ui/icons/Apple';
+import React from 'react';
+// import useStyles from '../estilos';
+// import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import Carrito from '../../image/CarritoCafi.png'
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import './contacto.scss'
 // import { StayPrimaryLandscape } from '@material-ui/icons';
 // import { blue } from '@material-ui/core/colors';
 
 const stylesLocal = makeStyles((theme) => ({
-    
     containerImagen:{
-        // backgroundImage: `url(${fondo})`,
-        backgroundAttachment: 'fixed',
+        height: '100%',
+        width: "90%"
+    },
+    imagen:{
+        maxWidth: "100%",
+        maxHeight: "100%"
     },
     textF: {
         width: "130%", 
@@ -25,21 +29,22 @@ const stylesLocal = makeStyles((theme) => ({
         background: "white",
         borderRadius: 5,
     },
-    tipo:{
+    letra:{
         color:"white",
-        background: "#673de6",
         fontWeight: 800,
-        fontSize: 33
+        fontSize: 30,
     },
     boton: {
-        background: '#5D0170',
+        background: '#6919a2',
         color: 'white',
-        height: 'auto',
-        fontSize: 30
+        fontSize: 28
     },
     botonCorreo:{
         borderRadius: 100,
         fontSize: 75,
+    },
+    fondo:{
+        background: "#953ee4"
     }
    
 }))
@@ -48,68 +53,61 @@ const stylesLocal = makeStyles((theme) => ({
 
 export default function Contacto() {
 
-    const [ open, setOpen ] = useState(true);
+    // const [ open, setOpen ] = useState(true);
     
     // const classes = useStyles();
     const estilo = stylesLocal();
 
     return (
         <div >
-            <Container>
-                <Grid lg={12} xs={12}>
-                    <Hidden smDown>
-                        <Box className="fondoImagen" display="flex" justifyContent="center"  p={5}>
-                            <Box pr={3} className="banner-user">
-                                <img className="banner-elemento" src={fondo} />
-                            </Box>
-                            <Box mb={10} className="buttonIndex">
-                                <a  style={{textDecoration: "none" }} target="_blank" href={`https://play.google.com/store/apps/details?id=com.fractalstudio.cafi`}>
-                                    <Button 
-                                        variant="contained" 
-                                        size="large"
-                                        className={estilo.boton}
-                                        disableRipple
-                                        startIcon={ <AndroidIcon style={{fontSize: 50}} />}
-                                    >
-                                        
-                                        CafiApp
-                                    </Button>
-                                </a>
-                            </Box>
-                        </Box>
-                    </Hidden>
-
-                    {/* <Box>
-                        <Typography  className={estilo.tipo}  component="div" >
-                            <Box textAlign="center" mt={10}>
-                                Subscribe Now!
-                            </Box>
-                        </Typography>
+            <div style={{height: 150, overflow: "hidden"}} ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height: "100%", width: "100%"}}><path d="M0.00,49.99 C154.28,294.38 373.81,-65.81 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style={{stroke: "none", fill: "#953ee4"}}></path></svg></div>
+            <Grid container className={estilo.fondo}>
+                <Grid item lg={5} xs={12}>
+                    <Box ml={3} className={estilo.containerImagen} >
+                        <img className={estilo.imagen} alt="no imagen" src={Carrito}/>
                     </Box>
-                    <Box display="flex" justifyContent="center" flexWrap="wrap" p={5}>
-                        <Box mr={2} mt={3}>
-                            <TextField 
-                                className={estilo.textF} 
-                                id="outlined-basic" 
-                                label="Your mail" 
-                                variant="outlined" 
-                            />
-                        </Box>
-                        <Box ml={7} mt={3}>
-                            <Button 
-                                variant="contained" 
-                                color="primary"
-                                size="large"
-                                className={estilo.boton}
-                                disableRipple
-                            >
-                                Suscribirse
-                            </Button>
-                        </Box>
-                    </Box> */}
                 </Grid>
-            </Container>
-            <div >
+                <Grid lg={6} xs={12} >
+                        <Box p={3} display="flex" justifyContent="center" alignItems="center"  textAlign="center">
+                            <Typography className={estilo.letra} >
+                                Conoce CAFI desde tu celular
+                            </Typography>
+                        </Box>
+                        <Box p={3} display="flex" justifyContent="center" alignItems="center"  textAlign="center">
+                            <Typography className={estilo.letra} >
+                                Descarga la App de CAFI, disponible en Play-Store.
+                            </Typography>
+                        </Box>
+                        <Box mt={2} display="flex" justifyContent="center" alignItems="center"  textAlign="center">
+                            <Typography style={{fontSize: 25, color: "white"}}>
+                                Click aquí para ver
+                            </Typography>
+                        </Box>
+                        <Box display="flex" justifyContent="center" alignItems="center">
+                            <ArrowDownwardIcon  style={{fontSize: 45, color: "white"}}/>
+                        </Box>
+                        <Box p={1} display="flex" justifyContent="center" alignItems="center"  textAlign="center">
+                            <a  style={{textDecoration: "none" }} target="_blank" href={`https://play.google.com/store/apps/details?id=com.fractalstudio.cafi`}>
+                                <Button 
+                                    variant="contained" 
+                                    size="large"
+                                    className={estilo.boton}
+                                    disableRipple
+                                    startIcon={ <AndroidIcon style={{fontSize: 50}} />}
+                                >
+                                    Cafi App
+                                </Button>
+                            </a>
+                        </Box>
+                        <Box p={3} mt={3} display="flex" justifyContent="center" textAlign="center">
+                            <Typography style={{fontSize: 25,  fontWeight: 600}}>
+                                Descubre y visualiza como podría verse tu tienda dentro de una aplicación, disponible para todos en cualquier momento, CAFI a la vanguardia digital.
+                            </Typography>
+                        </Box>
+                </Grid>
+            </Grid>
+            <div style={{height: 150, overflow: "hidden"}} ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height:"100%", width: "100%"}}><path d="M-0.84,19.23 C160.55,245.22 328.72,-115.95 503.67,64.63 L500.00,0.00 L0.00,0.00 Z" style={{stroke: "none", fill: "#953ee4"}}></path></svg></div>
+            <div>
                 <Container>
                     {/* <Box textAlign="center">
                         <IconButton 

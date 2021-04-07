@@ -1,16 +1,16 @@
 import React from 'react'
-import { Box, Grid, makeStyles } from '@material-ui/core'
-import { Fragment } from 'react'
+// import { makeStyles } from '@material-ui/core'
+// import { Fragment } from 'react'
 // import GetAppIcon from '@material-ui/icons/GetApp';
 import './banner.scss';
 import BannerAnim, { Element } from 'rc-banner-anim';
 import 'rc-banner-anim/assets/index.css';
 
-import Carrusel1 from '../../image/CarruselUno.jpg';
+// import Carrusel1 from '../../image/CarruselUno.jpg';
 import Carrusel2 from '../../image/CarruselDos.jpg';
 import Carrusel3 from '../../image/CarruselTres.jpg';
 
-const useStyles = makeStyles((theme) => ({
+// const useStyles = makeStyles((theme) => ({
     // principal:{
     //     position: 'relative'
     // },
@@ -36,11 +36,11 @@ const useStyles = makeStyles((theme) => ({
     // }
     //8600c8
     
-}));
+// }));
 
 export default function BannerPrincipal() {
     const BgElement = Element.BgElement;
-    const classes =useStyles();
+    // const classes =useStyles();
     
     return (
         <>

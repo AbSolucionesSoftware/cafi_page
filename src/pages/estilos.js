@@ -46,8 +46,7 @@ const useStyles = makeStyles((theme) => ({
         background: '#673de6'
     },
     divisorPrincipal:{
-        marginLeft: '39%',
-        width: '20%',
+        width: '25%',
         background: '#673de6'
     },
 

@@ -21,9 +21,7 @@ export default function Cuarta()
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen
-                            >
-
-                            </iframe>
+                            />
                         </Box>
                     </Grid>
                     <Grid lg={6} xs={10}>

@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Grid, Hidden, makeStyles, Typography } from '@material-ui/core';
+import { Box, Container, Divider, Grid,  makeStyles, Typography } from '@material-ui/core';
 import React, { Fragment } from 'react'
 import DoneAllIcon from '@material-ui/icons/DoneAll';
 
@@ -11,8 +11,8 @@ const styleslocales = makeStyles((theme) => ({
         height: "90%"
     },
     imagen:{
-        maxHeight: '100%',
-		maxWidth: '100%'
+		maxWidth: '90%',
+        borderRadius: 20,
     },
 }));
 
@@ -25,7 +25,7 @@ export default function Tercera() {
             <Container>
                 <Grid container>
                     <Grid lg={7} xs={12} >
-                        <Box display="flex" justifyContent="center" alignItems="center" className={local.containerImage}>
+                        <Box mt={2} display="flex" justifyContent="center" alignItems="center" className={local.containerImage}>
                             <img 
                                 className={local.imagen}
                                 src={Celular}

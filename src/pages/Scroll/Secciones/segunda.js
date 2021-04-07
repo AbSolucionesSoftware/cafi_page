@@ -1,7 +1,7 @@
-import { Box, Container, Divider, Grid, Hidden, makeStyles, Typography } from '@material-ui/core';
-import React, { Fragment } from 'react'
+import { Box, Container, Divider, Grid, makeStyles, Typography } from '@material-ui/core';
+import React from 'react'
 
-import ImagenOne from '../../../image/PUBLICIDAD PARA CAFI 6.1.jpg'
+import ImagenOne from '../../../image/PUBLICIDAD CAFI 6.png'
 import useStyles from '../../estilos';
 
 const styleslocales = makeStyles((theme) => ({
@@ -32,7 +32,7 @@ export default function Primera() {
                                 CAFI tu tienda en línea, en una APP MOVIL 
                             </Box>
                         </Typography>
-                        <Box className={classes.margenes}>
+                        <Box p={2} mt={2}>
                             <Divider variant="inset" className={classes.divisor}/>
                         </Box>
                         <Typography component="div" variant="h6">

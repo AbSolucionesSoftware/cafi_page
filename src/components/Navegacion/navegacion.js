@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 //MATERIAL UI
@@ -107,6 +107,8 @@ export default function Navegacion(props) {
 								<Button
 									to="/"
 									className={classes.marginButton}
+									color="primary"
+									style={{fontWeight: 600}}
 								>
 									Inicio
 								</Button>
@@ -114,6 +116,8 @@ export default function Navegacion(props) {
 							<HashLink to="/#galeria" style={{textDecoration: "none" }}>
 								<Button
 									className={classes.marginButton}
+									color="primary"
+									style={{fontWeight: 600}}
 								>
 									Galeria
 								</Button>
@@ -121,6 +125,8 @@ export default function Navegacion(props) {
 							<HashLink to="/#beneficios" style={{textDecoration: "none" }}>
 								<Button
 									className={classes.marginButton}
+									color="primary"
+									style={{fontWeight: 600}}
 								>
 									Beneficios
 								</Button>
@@ -128,6 +134,8 @@ export default function Navegacion(props) {
 							<HashLink to="/#paquetes" style={{textDecoration: "none" }}>
 								<Button
 									className={classes.marginButton}
+									color="primary"
+									style={{fontWeight: 600}}
 								>
 									Paquetes
 								</Button>
@@ -135,8 +143,10 @@ export default function Navegacion(props) {
 							<HashLink to="/#contacto" style={{textDecoration: "none" }}>
 								<Button
 									className={classes.marginButton}
+									color="primary"
+									style={{fontWeight: 600}}
 								>
-									Contacto
+									AppMovil
 								</Button>
 							</HashLink>
 							{/* {renderMenu} */}
@@ -166,7 +176,7 @@ export default function Navegacion(props) {
 								<ListItemIcon>
 									<HomeIcon />
 								</ListItemIcon>
-								<ListItemText primary="Inicio" />
+								<ListItemText primary="Inicio" color="primary" style={{fontWeight: 600}}/>
 							</ListItem>
 						</HashLink>
 						<HashLink to="/#galeria" style={{textDecoration: "none" }}>
@@ -174,7 +184,7 @@ export default function Navegacion(props) {
 								<ListItemIcon>
 									<PhotoLibraryIcon />
 								</ListItemIcon>
-								<ListItemText primary="Galeria" />
+								<ListItemText primary="Galeria" color="primary" style={{fontWeight: 600}} />
 							</ListItem>
 						</HashLink>
 						<HashLink to="/#beneficios" style={{textDecoration: "none" }}>
@@ -182,7 +192,7 @@ export default function Navegacion(props) {
 								<ListItemIcon>
 									<ErrorIcon/>
 								</ListItemIcon>
-								<ListItemText primary="Beneficios" />
+								<ListItemText primary="Beneficios" color="primary" style={{fontWeight: 600}} />/>
 							</ListItem>
 						</HashLink>
 						<HashLink to="/#paquetes" style={{textDecoration: "none" }}>
@@ -190,7 +200,7 @@ export default function Navegacion(props) {
 								<ListItemIcon>
 									<LocalOfferIcon/>
 								</ListItemIcon>
-								<ListItemText primary="Paquetes" />
+								<ListItemText primary="Paquetes" color="primary" style={{fontWeight: 600}} /> />
 							</ListItem>
 						</HashLink>
 						<HashLink to="/#contacto" style={{textDecoration: "none" }}>
@@ -198,7 +208,7 @@ export default function Navegacion(props) {
 								<ListItemIcon>
 									<MailIcon/>
 								</ListItemIcon>
-								<ListItemText primary="Contacto" />
+								<ListItemText primary="AppMovil" color="primary" style={{fontWeight: 600}} />/>
 							</ListItem>
 						</HashLink>
 					</List>

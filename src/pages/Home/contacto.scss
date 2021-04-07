@@ -1,19 +1,5 @@
-.containerGeneral{
-}
-.fondoImagen{
-    // background: #bdc3c7; 
-    // background: -webkit-linear-gradient(to right, #bdc3c7bc, #2c3e50), url(../../image/foto.jpg); 
-    // background: linear-gradient(to right, #bdc3c785, #2c3e50d5), url(../../image/foto.jpg);
-    // background-image: url(../../image/PublicidadCuatro.jpg);
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-size: cover;
-    position:relative; 
-    z-index:1;
-}
-
-.banner-user{
-    height: 700px;
+.containerImage{
+    height: 300px;
     width: 100%!important;
 }
 .banner-elemento{
@@ -24,16 +10,90 @@
     background-position: center center;
     background-size: contain;
 }
-.buttonIndex{
-    position:absolute; 
-    z-index:3;
-    left: 20em; 
-    top: 80%; 
-    opacity:0.9
-}
 @media(max-width: 768px){
 .banner-user{
     height: 150px!important;
 }
 }
 
+.poligonos{
+    clip-path: polygon(0 13%, 100% 0, 100% 89%, 0% 100%);
+}
+.poligonoGaleria{
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+}
+//EFECTOS DE GALERIA
+.caption-style-1{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    width: 100%!important;
+}
+.caption-style-1 li{
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+.caption-style-1 li:hover .caption{
+    opacity: 1;
+}
+.caption-style-1 li:hover img{
+    opacity: 1;
+    transform: scale(1.10,1.10);
+    -webkit-transform:scale(1.10,1.10);
+    -moz-transform:scale(1.10,1.10);
+    -ms-transform:scale(1.10,1.10);
+    -o-transform:scale(1.10,1.10);
+}
+.caption-style-1 img{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 0;
+}
+.caption-style-1 .caption{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    -ms-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+}
+.caption-style-1 img{
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+}
+.caption-style-1 .blur{
+    background-color: rgba(0,0,0,0.65);
+    height: 700px;
+    width: 700px;
+    // z-index: 5;
+    // position: absolute;
+}
+.caption-style-1 .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    height: 500px;
+    width: 600px;
+    text-align: center;
+    top:100px;
+}
+
+.imagenGaleria{
+    width:  100%; 
+    height: 100%; 
+    background-repeat: "no-repeat";
+    background-attachment: "center";
+    background-position: "center center";
+    background-size: "contain"; 
+}
+
+//BOTON EN 3D

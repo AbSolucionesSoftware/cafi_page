@@ -5,7 +5,7 @@ import React from 'react'
 function Galeria() {
     return (
         <div>
-            Hola mundo Galeria
+            
         </div>
     )
 }

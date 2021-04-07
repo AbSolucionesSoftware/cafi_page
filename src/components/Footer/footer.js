@@ -4,48 +4,67 @@ import { Fragment } from 'react'
 import { Grid, Box, makeStyles, Typography, Link } from '@material-ui/core';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import logo from '../../image/Logo Cafi.png'
 const useStyles = makeStyles((theme) => ({
-
     imagen:{
-        width: 220,
-        height: 80
+        width: 270,
+        height: 95
     },
-    
+    fondo:{
+        // background: "#953ee4"
+    }
 }));
 
 export default function Footer() {
 
+    const mensaje = 'Hola buen dia%0AMe interesa saber mas sobre CAFI, y adquirir algunos de sus paquetes.'
+
     const classes =useStyles();
     return (
-       <Fragment>
-           <Grid>
-               <Box mt={8} align="center">
-                    <img className={classes.imagen}
-                        src={logo}
-                        alt="Tecnologia de Huawei" 
-                    />
-               </Box>
-               <Box align="center">
-                   <Typography>
-                       Telefono: 317-103-5768
-                   </Typography>
-                   <Typography >
-                        Javier Mina #452, Coto privado Javier Mina, CP 48900
-                   </Typography>
-                   <Typography>
-                       Autlán de Navarro, Jalisco.
-                   </Typography>
-               </Box>
-               <Box align="center">
-                    <Link href="https://www.facebook.com/cafi.tutiendaenlinea?_rdc=1&_rdr" color="inherit" target="_blank">
-                        <FacebookIcon  fontSize="large"/>
-                    </Link>
-                    <Link href="https://www.instagram.com/cafi.tutiendaonline/" color="inherit" target="_blank">
-                        <InstagramIcon fontSize="large"/>
-                    </Link>
-               </Box>
+           <Grid container className={classes.fondo}>
+               <Grid lg={4} xs={12}>
+                    <Box align="center" p={4} mt={1}>
+                        <Typography variant="h6" color="primary">
+                            Contacto:
+                        </Typography>
+                        <Typography variant="h6">
+                            Telefono: 317-103-5768
+                        </Typography>
+                        <Typography variant="h6">
+                            Javier Mina #452, Coto privado Javier Mina, CP 48900
+                        </Typography>
+                        <Typography variant="h6">
+                            Autlán de Navarro, Jalisco.
+                        </Typography>
+                    </Box>
+               </Grid>
+               <Grid lg={4} xs={12}>
+                    <Box display="flex" alignItems="center" justifyContent="center" align="center" p={4} mt={2}>
+                        <img className={classes.imagen}
+                            src={logo}
+                            alt="Tecnologia de Huawei" 
+                        />
+                    </Box>
+               </Grid>
+               <Grid lg={4} xs={12}>
+                    <Box align="center" p={4} mt={1}>
+                        <Typography variant="h6">
+                            Siguenos en nuestras redes:
+                        </Typography>
+                        <Box p={2}>
+                            <Link href="https://www.facebook.com/cafi.tutiendaenlinea?_rdc=1&_rdr" color="inherit" target="_blank">
+                                <FacebookIcon color="primary" style={{fontSize: 50}}/>
+                            </Link>
+                            <Link href="https://www.instagram.com/cafi.tutiendaonline/" color="inherit" target="_blank">
+                                <InstagramIcon color="primary" style={{fontSize: 50}}/>
+                            </Link>
+                            <Link  href={`https://api.whatsapp.com/send?phone=523171035768&text=${mensaje}`} color="inherit" target="_blank">
+                                <WhatsAppIcon color="primary" style={{fontSize: 50}}/>
+                            </Link>
+                        </Box>
+                    </Box>
+               </Grid>
            </Grid>
-       </Fragment>
     )
 }
