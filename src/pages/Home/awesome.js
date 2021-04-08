@@ -14,6 +14,11 @@ const stylesLocal = makeStyles((theme) => ({
     width: theme.spacing(15),
     height: theme.spacing(15),
     color: 'white',
+    "&:hover": {
+        webkitTransform: "scale(1.3)",
+        transform: "scale(1.3)",
+        overflow: "hidden",
+    },
   },
   colorLetra:{
     color: 'white',

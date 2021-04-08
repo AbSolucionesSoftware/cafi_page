@@ -12,7 +12,7 @@ import cap6 from '../../image/Screens/cap6.jpg'
 import cap7 from '../../image/Screens/cap7.jpg'
 import cap8 from '../../image/Screens/cap8.jpg'
 import cap9 from '../../image/Screens/cap9.jpg'
-import cap10 from '../../image/Screens/cap10.jpg'
+// import cap10 from '../../image/Screens/cap10.jpg'
 
 import cafi1 from '../../image/Galeria/CAFI1.PNG';
 import cafi2 from '../../image/Galeria/CAFI2.PNG';
@@ -121,17 +121,17 @@ export default function Carrusel_Screens() {
                     <Carousel
                         style={{position: "absolute",  zIndex: 2}} 
                         responsive={responsive}  
-                        showDots
-                        sliderClass=""
+                        // showDots
+                        // sliderClass=""
                         swipeable
                         infinite
-                        autoPlay
-                        autoPlaySpeed={2000}
+                        // autoPlay
+                        // autoPlaySpeed={2000}
                         // containerClass="container"
                     >
                         <Box className={estilos.containerImagen}>
                             <img
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 className={estilos.imagen}
                                 src={cap1}
                                 alt="imagen"
@@ -139,7 +139,7 @@ export default function Carrusel_Screens() {
                         </Box>
                         <Box className={estilos.containerImagen}>
                             <img
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 alt="imagen"
                                 className={estilos.imagen}
                                 src={cap2}
@@ -149,7 +149,7 @@ export default function Carrusel_Screens() {
                         <Box className={estilos.containerImagen}>
                             <img
                                 className={estilos.imagen}
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 src={cap3}
                                 alt="imagen"
                             />
@@ -158,7 +158,7 @@ export default function Carrusel_Screens() {
                         <Box className={estilos.containerImagen}>
                             <img
                                 className={estilos.imagen}
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 src={cap4}
                                 alt="imagen"
                             />
@@ -167,7 +167,7 @@ export default function Carrusel_Screens() {
                         <Box className={estilos.containerImagen}>
                             <img
                                 className={estilos.imagen}
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 src={cap5}
                                 alt="imagen"
                             />
@@ -176,7 +176,7 @@ export default function Carrusel_Screens() {
                         <Box className={estilos.containerImagen}>
                             <img
                                 className={estilos.imagen}
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 src={cap6}
                                 alt="imagen"
                             />
@@ -185,7 +185,7 @@ export default function Carrusel_Screens() {
                         <Box className={estilos.containerImagen}>
                             <img
                                 className={estilos.imagen}
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 src={cap7}
                                 alt="imagen"
                             />
@@ -194,7 +194,7 @@ export default function Carrusel_Screens() {
                         <Box className={estilos.containerImagen}>
                             <img
                                 className={estilos.imagen}
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 src={cap8}
                                 alt="imagen"
                             />
@@ -203,21 +203,21 @@ export default function Carrusel_Screens() {
                         <Box className={estilos.containerImagen}>
                             <img
                                 className={estilos.imagen}
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 src={cap9}
                                 alt="imagen"
                             />
                             
                         </Box>
-                        <Box className={estilos.containerImagen}>
+                        {/* <Box className={estilos.containerImagen}>
                             <img
                                 className={estilos.imagen}
-                                style={{marginLeft: 70}}
+                                style={{marginLeft: 73}}
                                 src={cap10}
                                 alt="imagen"
                             />
                             
-                        </Box>
+                        </Box> */}
                     </Carousel>
                 </Box>
             </Grid>
@@ -294,8 +294,8 @@ export default function Carrusel_Screens() {
                     <Grid lg={6} xs={12} className="caption-style-1">
                         <Box p={1}>
                             <li>
-                                <img  className="imagenGaleria" alt="Galeria de fotos" src={cafi4} style={{height: 275}}/>
-                                <a rel="noreferrer" href="https://vibrant-hamilton-7a1ec1.netlify.app/" target="_blank">
+                                <img  className="imagenGaleria" alt="Galeria de fotos" src={cafi4} />
+                                <a rel="noreferrer" href="https://krispychicken.mx/" target="_blank">
                                     <div className="caption">
                                         <div className="blur"></div>
                                         <div className="caption-text">

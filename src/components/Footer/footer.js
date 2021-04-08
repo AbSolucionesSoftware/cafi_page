@@ -9,7 +9,19 @@ import logo from '../../image/Logo Cafi.png'
 const useStyles = makeStyles((theme) => ({
     imagen:{
         width: 270,
-        height: 95
+        height: 95,
+        "&:hover": {
+            webkitTransform: "scale(1.3)",
+            transform: "scale(1.3)",
+            overflow: "hidden",
+        },
+    },
+    botonRed:{
+        "&:hover": {
+            webkitTransform: "scale(1.3)",
+            transform: "scale(1.3)",
+            overflow: "hidden",
+        },
     },
     fondo:{
         // background: "#953ee4"
@@ -21,6 +33,7 @@ export default function Footer() {
     const mensaje = 'Hola buen dia%0AMe interesa saber mas sobre CAFI, y adquirir algunos de sus paquetes.'
 
     const classes =useStyles();
+
     return (
            <Grid container className={classes.fondo}>
                <Grid lg={4} xs={12}>
@@ -54,13 +67,13 @@ export default function Footer() {
                         </Typography>
                         <Box p={2}>
                             <Link href="https://www.facebook.com/cafi.tutiendaenlinea?_rdc=1&_rdr" color="inherit" target="_blank">
-                                <FacebookIcon color="primary" style={{fontSize: 50}}/>
+                                <FacebookIcon className={classes.botonRed} color="primary" style={{fontSize: 50}}/>
                             </Link>
                             <Link href="https://www.instagram.com/cafi.tutiendaonline/" color="inherit" target="_blank">
-                                <InstagramIcon color="primary" style={{fontSize: 50}}/>
+                                <InstagramIcon className={classes.botonRed} color="primary" style={{fontSize: 50}}/>
                             </Link>
                             <Link  href={`https://api.whatsapp.com/send?phone=523171035768&text=${mensaje}`} color="inherit" target="_blank">
-                                <WhatsAppIcon color="primary" style={{fontSize: 50}}/>
+                                <WhatsAppIcon className={classes.botonRed} color="primary" style={{fontSize: 50}}/>
                             </Link>
                         </Box>
                     </Box>

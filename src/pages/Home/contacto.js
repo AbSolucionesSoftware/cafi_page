@@ -35,9 +35,19 @@ const stylesLocal = makeStyles((theme) => ({
         fontSize: 30,
     },
     boton: {
-        background: '#6919a2',
-        color: 'white',
-        fontSize: 28
+        background: "white",
+        color: '#6919a2',
+        fontSize: 28,
+        borderColor: "#6919a2",
+        border: "1px solid white",
+        "&:hover": {
+            // webkitTransform: "scale(1.1)",
+            // transform: "scale(1.1)",
+            // overflow: "hidden",
+            backgroundColor: "#953ee4",
+            color: "white",
+            border: "1px solid white"
+        },
     },
     botonCorreo:{
         borderRadius: 100,
@@ -100,7 +110,7 @@ export default function Contacto() {
                             </a>
                         </Box>
                         <Box p={3} mt={3} display="flex" justifyContent="center" textAlign="center">
-                            <Typography style={{fontSize: 25,  fontWeight: 600}}>
+                            <Typography style={{fontSize: 25,  fontWeight: 600, color: "white"}}>
                                 Descubre y visualiza como podría verse tu tienda dentro de una aplicación, disponible para todos en cualquier momento, CAFI a la vanguardia digital.
                             </Typography>
                         </Box>
