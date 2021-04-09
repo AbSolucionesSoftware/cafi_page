@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import clienteAxios from '../../config/axios';
+import MessageSnackbar from '../../components/Snackbar/snackbar';
 
 import AndroidIcon from '@material-ui/icons/Android';
 import { Box, Button, Container, Grid, Hidden,  IconButton,  makeStyles, TextField, Typography} from '@material-ui/core';
@@ -127,6 +128,12 @@ export default function Contacto() {
 
     return (
         <div >
+            <MessageSnackbar
+				open={snackbar.open}
+				mensaje={snackbar.mensaje}
+				status={snackbar.status}
+				setSnackbar={setSnackbar}
+			/>
             <div style={{height: 150, overflow: "hidden"}} ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height: "100%", width: "100%"}}><path d="M0.00,49.99 C154.28,294.38 373.81,-65.81 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style={{stroke: "none", fill: "#953ee4"}}></path></svg></div>
             <Grid container className={estilo.fondo}>
                 <Grid item lg={5} xs={12}>
@@ -205,6 +212,7 @@ export default function Contacto() {
                                         <TextField
                                             error={!correo.nombre && validate}
                                             helperText={!correo.nombre && validate ? 'Esta campo es requerido' : null}
+                                            value={correo.nombre ? correo.nombre : ''}
                                             className={estilo.textLarge} 
                                             name="nombre"
                                             placeholder="Interesado"
@@ -217,6 +225,7 @@ export default function Contacto() {
                                         <TextField 
                                             error={!correo.correo && validate}
                                             helperText={!correo.correo && validate ? 'Esta campo es requerido' : null}
+								            value={correo.correo ? correo.correo : ''}
                                             className={estilo.textLarge} 
                                             name="correo"
                                             placeholder="Tu correo electronico"
@@ -229,6 +238,7 @@ export default function Contacto() {
                                         <TextField
                                             error={!correo.asunto && validate}
                                             helperText={!correo.asunto && validate ? 'Esta campo es requerido' : null}
+                                            value={correo.asunto ? correo.asunto : ''}
                                             className={estilo.textLarge} 
                                             name="asunto"
                                             placeholder="Asunto de este correo"
@@ -239,7 +249,8 @@ export default function Contacto() {
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField 
-                                            className={estilo.textLarge} 
+                                            className={estilo.textLarge}
+                                            value={correo.telefono ? correo.telefono : ''}
                                             name="telefono"
                                             placeholder="Telefono opcional"
                                             label="Telefono" 
@@ -251,6 +262,7 @@ export default function Contacto() {
                                         <TextField
                                             error={!correo.mensaje && validate}
                                             helperText={!correo.mensaje && validate ? 'Esta campo es requerido' : null}
+                                            value={correo.mensaje ? correo.mensaje : ''}
                                             className={estilo.textLargeMensaje}
                                             name="mensaje"
                                             placeholder="Mensaje de correo"
