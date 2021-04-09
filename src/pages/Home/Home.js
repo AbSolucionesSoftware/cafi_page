@@ -4,7 +4,7 @@ import BannerPrincipal from '../BannerPrincipal/bannerPrincipal'
 import FrenteScroll from '../Scroll/scroll'
 import Awesome from './awesome'
 import Paquetes from '../Paquetes/paquetes';
-import Contacto from './contacto';
+import Contacto from '../Contacto/contacto';
 import Carrusel_Screens from './carrusel_screens'
 import { Box, Container } from '@material-ui/core';
 

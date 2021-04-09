@@ -29,6 +29,11 @@ const stylesLocal = makeStyles((theme) => ({
         background: "white",
         borderRadius: 5,
     },
+    textLargeMensaje: {
+        width: "50%",
+        background: "white",
+        borderRadius: 5,
+    },
     letra:{
         color:"white",
         fontWeight: 800,
@@ -64,12 +69,60 @@ const stylesLocal = makeStyles((theme) => ({
 export default function Contacto() {
 
     const [ open, setOpen ] = useState(true);
+    const [ validate, setValidate ] = useState(false);
+    const [ correo, setCorreo ] = useState([]);
     
     const classes = useStyles();
     const estilo = stylesLocal();
 
-    const enviarCorreo = async () => {
+    const [ snackbar, setSnackbar ] = useState({
+		open: false,
+		mensaje: '',
+		status: ''
+	});
 
+    const enviarCorreo = async () => {
+        if (!correo.nombre || !correo.asunto
+            || !correo.mensaje || !correo.correo ) {
+			setValidate(true);
+			return;
+		}
+        try {
+            await clienteAxios
+            .post(`/company/contact/send/email/`, {
+                "pagina": "cafi",
+                "mensaje": correo.mensaje,
+                "nombre": correo.nombre,
+                "telefono": correo.telefono,
+                "asunto": correo.asunto,
+                "correo": correo.correo
+            })
+            .then((res) => {
+                console.log(res);
+                setSnackbar({
+                    open: true,
+                    mensaje: "Correo enviado exitosmente, pronto nos contataremos contigo.",
+                    status: 'success'
+                });
+            })
+            .catch((err) => {
+                console.log(err);
+                setSnackbar({
+                    open: true,
+                    mensaje: "Ocurrio un problema con el servidor",
+                    status: 'err'
+                });
+            });
+        } catch (error) {
+            console.log(error);  
+        }
+    }
+
+    const handleCorreo = (e) =>{
+        setCorreo({
+			...correo,
+			[e.target.name]: e.target.value
+		});
     }
 
     return (
@@ -150,29 +203,38 @@ export default function Contacto() {
                                <form>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
+                                            error={!correo.nombre && validate}
+                                            helperText={!correo.nombre && validate ? 'Esta campo es requerido' : null}
                                             className={estilo.textLarge} 
-                                            name="interesado"
+                                            name="nombre"
                                             placeholder="Interesado"
                                             label="Nombre de Interesado" 
-                                            variant="outlined" 
+                                            variant="outlined"
+                                            onChange={handleCorreo}
                                         />
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField 
+                                            error={!correo.correo && validate}
+                                            helperText={!correo.correo && validate ? 'Esta campo es requerido' : null}
                                             className={estilo.textLarge} 
                                             name="correo"
                                             placeholder="Tu correo electronico"
                                             label="Cuenta de Correo" 
                                             variant="outlined" 
+                                            onChange={handleCorreo}
                                         />
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
+                                            error={!correo.asunto && validate}
+                                            helperText={!correo.asunto && validate ? 'Esta campo es requerido' : null}
                                             className={estilo.textLarge} 
                                             name="asunto"
                                             placeholder="Asunto de este correo"
                                             label="Asunto"
                                             variant="outlined"
+                                            onChange={handleCorreo}
                                         />
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
@@ -182,15 +244,20 @@ export default function Contacto() {
                                             placeholder="Telefono opcional"
                                             label="Telefono" 
                                             variant="outlined" 
+                                            onChange={handleCorreo}
                                         />
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
-                                            className={estilo.textLarge}
+                                            error={!correo.mensaje && validate}
+                                            helperText={!correo.mensaje && validate ? 'Esta campo es requerido' : null}
+                                            className={estilo.textLargeMensaje}
                                             name="mensaje"
                                             placeholder="Mensaje de correo"
                                             label="Mensaje"
+                                            multiline
                                             variant="outlined"
+                                            onChange={handleCorreo}
                                         />
                                     </Box>
                                     <Box mt={3}>
@@ -199,9 +266,9 @@ export default function Contacto() {
                                             color="primary"
                                             size="large"
                                             className={estilo.boton}
-                                            disableRipple
+                                            onClick={() => enviarCorreo()}
                                         >
-                                            Solicitar Información
+                                            Enviar Solicitud
                                         </Button>
                                     </Box>
                                </form>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fragment } from 'react'
 
-import { Grid, Box, makeStyles, Typography, Link } from '@material-ui/core';
+import { Grid, Box, makeStyles, Typography, Link, Hidden } from '@material-ui/core';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
@@ -52,14 +52,16 @@ export default function Footer() {
                         </Typography>
                     </Box>
                </Grid>
-               <Grid lg={4} xs={12}>
-                    <Box display="flex" alignItems="center" justifyContent="center" align="center" p={4} mt={2}>
-                        <img className={classes.imagen}
-                            src={logo}
-                            alt="Tecnologia de Huawei" 
-                        />
-                    </Box>
-               </Grid>
+               <Hidden xsDown mdDown>
+                    <Grid lg={4} xs={12}>
+                            <Box display="flex" alignItems="center" justifyContent="center" align="center" p={4} mt={2}>
+                                <img className={classes.imagen}
+                                    src={logo}
+                                    alt="Tecnologia de Huawei" 
+                                />
+                            </Box>
+                    </Grid>
+               </Hidden>
                <Grid lg={4} xs={12}>
                     <Box align="center" p={4} mt={1}>
                         <Typography variant="h6">
