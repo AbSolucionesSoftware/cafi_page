@@ -1,14 +1,14 @@
-import { Box, Button, Container, Grid, Hidden,  makeStyles, Typography} from '@material-ui/core';
+import React, { useState } from 'react';
+import clienteAxios from '../../config/axios';
+
 import AndroidIcon from '@material-ui/icons/Android';
-// import AppleIcon from '@material-ui/icons/Apple';
-import React from 'react';
-// import useStyles from '../estilos';
-// import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import { Box, Button, Container, Grid, Hidden,  IconButton,  makeStyles, TextField, Typography} from '@material-ui/core';
+
+import useStyles from '../estilos';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import Carrito from '../../image/CarritoCafi.png'
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import './contacto.scss'
-// import { StayPrimaryLandscape } from '@material-ui/icons';
-// import { blue } from '@material-ui/core/colors';
 
 const stylesLocal = makeStyles((theme) => ({
     containerImagen:{
@@ -63,10 +63,14 @@ const stylesLocal = makeStyles((theme) => ({
 
 export default function Contacto() {
 
-    // const [ open, setOpen ] = useState(true);
+    const [ open, setOpen ] = useState(true);
     
-    // const classes = useStyles();
+    const classes = useStyles();
     const estilo = stylesLocal();
+
+    const enviarCorreo = async () => {
+
+    }
 
     return (
         <div >
@@ -119,7 +123,12 @@ export default function Contacto() {
             <div style={{height: 150, overflow: "hidden"}} ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height:"100%", width: "100%"}}><path d="M-0.84,19.23 C160.55,245.22 328.72,-115.95 503.67,64.63 L500.00,0.00 L0.00,0.00 Z" style={{stroke: "none", fill: "#953ee4"}}></path></svg></div>
             <div>
                 <Container>
-                    {/* <Box textAlign="center">
+                    <Box textAlign="center">
+                        <Typography variant="h3" color="primary">
+                            Contacto
+                        </Typography>
+                    </Box>
+                    <Box textAlign="center">
                         <IconButton 
                             variant="outlined"
                             color="primary"
@@ -134,15 +143,16 @@ export default function Contacto() {
                         >
                             <MailOutlineIcon className={estilo.botonCorreo}/>
                         </IconButton>
-                    </Box> */}
+                    </Box>
                     <Box>
-                        {/* {open === true ? (
+                        {open === true ? (
                             <Box textAlign="center">
                                <form>
                                     <Box display="flex" justifyContent="center" p={1}>
-                                        <TextField 
+                                        <TextField
                                             className={estilo.textLarge} 
-                                            // id="outlined-basic" 
+                                            name="interesado"
+                                            placeholder="Interesado"
                                             label="Nombre de Interesado" 
                                             variant="outlined" 
                                         />
@@ -150,7 +160,8 @@ export default function Contacto() {
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField 
                                             className={estilo.textLarge} 
-                                            // id="outlined-basic" 
+                                            name="correo"
+                                            placeholder="Tu correo electronico"
                                             label="Cuenta de Correo" 
                                             variant="outlined" 
                                         />
@@ -158,15 +169,26 @@ export default function Contacto() {
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
                                             className={estilo.textLarge} 
-                                            // id="outlined-basic"
-                                            label="Subject"
+                                            name="asunto"
+                                            placeholder="Asunto de este correo"
+                                            label="Asunto"
                                             variant="outlined"
+                                        />
+                                    </Box>
+                                    <Box display="flex" justifyContent="center" p={1}>
+                                        <TextField 
+                                            className={estilo.textLarge} 
+                                            name="telefono"
+                                            placeholder="Telefono opcional"
+                                            label="Telefono" 
+                                            variant="outlined" 
                                         />
                                     </Box>
                                     <Box display="flex" justifyContent="center" p={1}>
                                         <TextField
                                             className={estilo.textLarge}
-                                            // id="outlined-basic"
+                                            name="mensaje"
+                                            placeholder="Mensaje de correo"
                                             label="Mensaje"
                                             variant="outlined"
                                         />
@@ -186,7 +208,7 @@ export default function Contacto() {
                             </Box>
                         ): (
                             null
-                        )} */}
+                        )}
                     </Box>
                 </Container>
             </div>
