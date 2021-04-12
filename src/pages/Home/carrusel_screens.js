@@ -82,7 +82,6 @@ const responsive = {
       breakpoint: { max: 400, min: 0 },
       items: 1,
     },
-    
 };
 
 

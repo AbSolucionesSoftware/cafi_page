@@ -140,13 +140,22 @@ export default function Navegacion(props) {
 									Paquetes
 								</Button>
 							</HashLink>
-							<HashLink to="/#contacto" style={{textDecoration: "none" }}>
+							<HashLink to="/#appMovil" style={{textDecoration: "none" }}>
 								<Button
 									className={classes.marginButton}
 									color="primary"
 									style={{fontWeight: 600}}
 								>
 									AppMovil
+								</Button>
+							</HashLink>
+							<HashLink to="/#correos" style={{textDecoration: "none" }}>
+								<Button
+									className={classes.marginButton}
+									color="primary"
+									style={{fontWeight: 600}}
+								>
+									Contacto
 								</Button>
 							</HashLink>
 							{/* {renderMenu} */}
@@ -203,12 +212,20 @@ export default function Navegacion(props) {
 								<ListItemText primary="Paquetes" color="primary" style={{fontWeight: 600}} /> />
 							</ListItem>
 						</HashLink>
-						<HashLink to="/#contacto" style={{textDecoration: "none" }}>
+						<HashLink to="/#appMovil" style={{textDecoration: "none" }}>
 							<ListItem button onClick={handleDrawerClose}>
 								<ListItemIcon>
 									<MailIcon/>
 								</ListItemIcon>
 								<ListItemText primary="AppMovil" color="primary" style={{fontWeight: 600}} />/>
+							</ListItem>
+						</HashLink>
+						<HashLink to="/#correos" style={{textDecoration: "none" }}>
+							<ListItem button onClick={handleDrawerClose}>
+								<ListItemIcon>
+									<MailIcon/>
+								</ListItemIcon>
+								<ListItemText primary="Contacto" color="primary" style={{fontWeight: 600}} />/>
 							</ListItem>
 						</HashLink>
 					</List>

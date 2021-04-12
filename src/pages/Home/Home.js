@@ -1,5 +1,4 @@
 import React from 'react'
-
 import BannerPrincipal from '../BannerPrincipal/bannerPrincipal'
 import FrenteScroll from '../Scroll/scroll'
 import Awesome from './awesome'
@@ -28,7 +27,7 @@ export default function Home() {
                     <Paquetes />
                 </Box>
             </div>
-            <div id="contacto">
+            <div id="appMovil">
                 <Box>
                     <Contacto />
                 </Box>

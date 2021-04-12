@@ -181,7 +181,7 @@ export default function Contacto() {
                 </Grid>
             </Grid>
             <div style={{height: 150, overflow: "hidden"}} ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height:"100%", width: "100%"}}><path d="M-0.84,19.23 C160.55,245.22 328.72,-115.95 503.67,64.63 L500.00,0.00 L0.00,0.00 Z" style={{stroke: "none", fill: "#953ee4"}}></path></svg></div>
-            <div>
+            <div id="correos">
                 <Container>
                     <Box textAlign="center">
                         <Typography variant="h3" color="primary">
